@@ -1,9 +1,0 @@
-#summary NameCheap.com.
-
-= Introduction =
-
-NameCheap.com is a domain registrar
-
-
-= Details =
-
