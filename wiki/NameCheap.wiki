@@ -2,7 +2,7 @@
 
 ==About NameCheap==
 
-NameCheap is an *ICANN accredited domain registrar and web hosting* company. We also offer SSL certificates from two of the most renowned SSL certificate providers – GeoTrust and Comodo.
+NameCheap is an *ICANN accredited domain registrar and web hosting* company. We also offer SSL certificates from two of the most renowned SSL certificate providers – Geo Trust and Comodo.
 
 Our primary goal is to present domain-related and web hosting services to our customers at the *lowest possible price* without compromising security.  
 
@@ -19,4 +19,3 @@ Domain name registration and transfers includes the following features: Free URL
 *Note:* Some of these features such as URL forwarding,Email forwarding etc., are only applicable for domain names using NameCheap’s default nameservers.
 
 For more information, please visit www.namecheap.com
-
