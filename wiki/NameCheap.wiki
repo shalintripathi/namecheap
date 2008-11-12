@@ -11,7 +11,7 @@ The following is a list of services currently offered by us:
  * Domain name transfers – Both in/out of NameCheap and between NameCheap users.
  * Domain name trading at NameCheap Market place
  * WHOIS Privacy protection service 
- * GeoTrust and Comodo SSL certificates and 
+ * Geotrust and Comodo SSL certificates and 
  * Web Hosting plans
 
 Domain name registration and transfers includes the following features: Free URL Forwarding, Free Email Forwarding (No Ads), Free Parking Page, Free Dynamic DNS with Client, Free Security Features, Registrar Lock etc, Custom DNS Settings, Custom Name server Registration, Optional Whois Protection.
