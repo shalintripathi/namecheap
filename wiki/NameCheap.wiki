@@ -14,7 +14,6 @@ The following is a list of services currently offered by us:
  * Geotrust and Comodo SSL certificates and 
  * Web Hosting plans
 Domain name registration and transfers includes the following features: Free URL Forwarding, Free Email Forwarding (No Ads), Free Parking Page, Free Dynamic DNS with Client, Free Security Features, Registrar Lock etc, Custom DNS Settings, Custom Name server Registration, Optional Whois Protection.
-
 *Note:* Some of these features such as URL forwarding,Email forwarding etc., are only applicable for domain names using NameCheap’s default nameservers.
 
 For more information, please visit http://www.namecheap.com
