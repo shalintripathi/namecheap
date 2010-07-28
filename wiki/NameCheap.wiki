@@ -12,7 +12,7 @@ The following is a list of services currently offered by us:
  * Domain name trading at !NameCheap Market place
  * WHOIS Privacy protection service 
  * Geotrust and Comodo SSL certificates
- * Free DNS hosting, RichContent and Whois Business Listing 
+ * Free DNS hosting, Rich Content and Whois Business Listing 
  * Web Hosting plans
 
 Domain name registration and transfers includes the following features: Free URL Forwarding, Free Email Forwarding (No Ads), Free Parking Page, Free Dynamic DNS with Client, Free Security Features, Registrar Lock etc, Custom DNS Settings, Custom Name server Registration, Optional Whois Protection.
