@@ -4,14 +4,15 @@
 
 NameCheap is an *ICANN accredited domain registrar and web hosting* company. We also offer SSL certificates from two of the most renowned SSL certificate providers – Geotrust and Comodo.
 
-Our primary goal is to present domain-related and web hosting services to our customers at the *lowest possible price* without compromising security.  
+Our primary goal is to present domain-related and web hosting services to our customers at the *lowest possible price* without compromising on security and quality of service.  
 
 The following is a list of services currently offered by us:
  * Domain name registrations
  * Domain name transfers – Both in/out of NameCheap and between NameCheap users.
  * Domain name trading at NameCheap Market place
  * WHOIS Privacy protection service 
- * Geotrust and Comodo SSL certificates and 
+ * Geotrust and Comodo SSL certificates
+ * Free DNS hosting, RichContent and Whois Business Listing 
  * Web Hosting plans
 
 Domain name registration and transfers includes the following features: Free URL Forwarding, Free Email Forwarding (No Ads), Free Parking Page, Free Dynamic DNS with Client, Free Security Features, Registrar Lock etc, Custom DNS Settings, Custom Name server Registration, Optional Whois Protection.
