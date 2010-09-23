@@ -1,6 +1,7 @@
 #summary Changes made in each release.
 
-===Version 1.1.2===
+== Version 1.1.2 ==
+
 _(Release Date: Sept 21, 2010)_
 
 *New/Enhancement*
