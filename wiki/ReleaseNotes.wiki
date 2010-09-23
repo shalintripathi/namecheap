@@ -1,4 +1,4 @@
-#summary Changes made in each release.
+#summary Changes made in eachrelease.
 
 ==== Version 1.1.2 ====
 _(Release Date: Sept 21, 2010)_
