@@ -6,8 +6,8 @@ _(Release Date: Sept 21, 2010)_
 * New/Enhancement *
 
  * The algorithm used for phone country code checking was rewritten.
-
  * Support for .eu registerations.
+
 *_NOTE:_* At this time WHMCS doesn't support extended attributes for .eu domains. You have to add the following code at the end of the file includes/additionaldomainfields.php before ? >
 {{{
 $additionaldomainfields[".eu"][] = array(
