@@ -1,4 +1,4 @@
-===About Namecheap===
+#summary About Us
 
 Namecheap is an *ICANN accredited* domain registrar and web hosting company. We also offer SSL certificates from two of the most renowned SSL certificate providers – *Geotrust and Comodo*.
 
