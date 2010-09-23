@@ -1,9 +1,10 @@
 #summary Changes made in each release.
 
-==Version 1.1.2==
+===Version 1.1.2===
 _(Release Date: Sept 21, 2010)_
 
 *New/Enhancement*
+
 
 * The algorithm used for phone country code checking was rewritten.
 * Support for Registration and extended attributes for .eu.
