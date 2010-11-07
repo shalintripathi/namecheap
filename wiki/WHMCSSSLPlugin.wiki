@@ -6,9 +6,9 @@ Namecheap.com SSL module for WHMCS is an open-source plug-in that is distributed
 
   * RapidSSL
   * RapidSSL Wildcard
-  * GeoTrust QuickSSL 
-  * GeoTrust QuickSSL Premium 
-  * GeoTrust True BusinessID with EV
+  * !GeoTrust QuickSSL 
+  * !GeoTrust QuickSSL Premium 
+  * !GeoTrust True BusinessID with EV
   * Comodo PositiveSSL
   * Comodo PositiveSSL Wildcard
   * Comodo InstantSSL
@@ -17,14 +17,14 @@ Namecheap.com SSL module for WHMCS is an open-source plug-in that is distributed
 === Pre-requisites ===
 
   * Access to WHMCS admin area. 
-  * An understanding of Namecheap’s environments. 
+  * An understanding of [http://developer.namecheap.com/docs/doku.php?id=overview:2.environments Namecheap’s environments]. 
   * Namecheap account with API access enabled on the desired environment. 
 
-_*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our sandbox environment, before pointing it to production. For more detailed information, please visit the developer's site at http://developer.namecheap.com. 
+_*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please visit the developer's site at http://developer.namecheap.com. 
 
 == Download and Installation ==
   # Download the latest plugin (namecheap-ssl.x.x.zip) archive and extract it. 
-  # Create a folder called namecheapssl under modules/servers in your WHMCS root directory and paste the downloaded namecheapssl.php, namecheapapi.php, namecheapssl_tpl.php and viewdetails.tpl files inside the folder. The plug-in installation is complete. 
+  # Create a folder called *namecheapssl* under modules/servers in your WHMCS root directory and paste the downloaded *namecheapssl.php*, *namecheapapi.php*, *namecheapssl_tpl.php* and *viewdetails.tpl* files inside the folder. The plug-in installation is complete. 
 
 == Setting up the Product and Configuration ==
 
