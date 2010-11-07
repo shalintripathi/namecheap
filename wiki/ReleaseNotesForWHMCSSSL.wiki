@@ -1,0 +1,6 @@
+#summary Release notes for WHMCS SSL Plugin
+
+===Version 1.0.0===
+_Released Nov 07, 2010_
+
+ * Initial Release
