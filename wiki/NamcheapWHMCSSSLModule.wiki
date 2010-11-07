@@ -39,6 +39,8 @@ To setup an SSL certificate product, follow the steps below:
   # Additionally, you can let the client choose these options on the order form and alter the price accordingly using configurable options. The option names supported to override the default settings are "Certificate Type" and/or "Years" - you can use both, just the Years option or even neither
   # If “Use existing SSL from account” option is checked we will try to use an existing SSL certificate of this type from your Namecheap account first. If there is no SSL available that can be used, new certificate will be purchased.
 
+http://files.namecheap.com/images/googlecode/whmcs-ssl-settings.png
+
 ==== Multiple Years ====
 As mentioned above you can allow clients to choose how long the certificate is registered for. To do this you setup the product as normal with a one time cycle and base price of zero. 
 
@@ -47,6 +49,7 @@ Setup a Configurable Option Group in the normal way and add an option named "Yea
 That then shows on the product configuration screen for the user to choose from when ordering and the price charged is the value of the option selected. 
 
 For example your configurable option might look like this: 
+http://files.namecheap.com/images/googlecode/whmcs-ssl-pricing-configuration.png
 
 ==== The Order Process ====
 
