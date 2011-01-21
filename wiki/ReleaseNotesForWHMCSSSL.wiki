@@ -3,7 +3,7 @@
 ===Version 1.1.0===
 _Released Jan 21, 2011_
  
- * Support for VeriSign Secure Site, VeriSign Secure Site Pro, VeriSign Secure Site EV VeriSign Secure Site Pro EV, Geotrust TrueBusinessID and Geotrust TrueBusinessID WildCard certificates.
+ * Support for !VeriSign Secure Site, !VeriSign Secure Site Pro, !VeriSign Secure Site EV, !VeriSign Secure Site Pro EV, Geotrust TrueBusinessID and Geotrust TrueBusinessID !WildCard certificates.
 
  * Initial Release
 
