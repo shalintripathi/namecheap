@@ -16,7 +16,7 @@ Supports new certificates. Now you can also offer the following SSL certificates
 
 Namecheap.com SSL module for WHMCS is an open-source plug-in that is distributed free of charge. This module allows you to automate SSL Certificate sales with the Namecheap platform. This allows you to offer the following types of SSL certificates:
 
-GeoTrust Cerificates:
+!GeoTrust Cerificates:
   * RapidSSL
   * RapidSSL Wildcard
   * !GeoTrust QuickSSL 
@@ -32,7 +32,7 @@ Comodo Certificates:
   * Comodo InstantSSL
   * Comodo PremiumSSL
   
-VeriSign Certificates:
+!VeriSign Certificates:
   
   * !VeriSign Secure Site
   * !VeriSign Secure Site Pro
