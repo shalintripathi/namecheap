@@ -5,12 +5,12 @@
 ===Updated Jan 21, 2011 to Version 1.1.0===
 Supports new certificates. Now you can also offer the following SSL certificates to your clients:
   
-  * VeriSign Secure Site
-  * VeriSign Secure Site Pro
-  * VeriSign Secure Site EV
-  * VeriSign Secure Site Pro EV
-  * Geotrust TrueBusiness ID
-  * Geotrust TrueBusiness ID WildCard
+  * !VeriSign Secure Site
+  * !VeriSign Secure Site Pro
+  * !VeriSign Secure Site EV
+  * !VeriSign Secure Site Pro EV
+  * !Geotrust TrueBusiness ID
+  * !Geotrust TrueBusiness ID WildCard
 
 ----
 
