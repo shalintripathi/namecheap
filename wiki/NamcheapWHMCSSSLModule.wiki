@@ -10,7 +10,7 @@ Supports new certificates. Now you can also offer the following SSL certificates
   * !VeriSign Secure Site EV
   * !VeriSign Secure Site Pro EV
   * !Geotrust TrueBusinessID
-  * !Geotrust TrueBusinessID WildCard
+  * !Geotrust TrueBusinessID !WildCard
 
 ----
 
