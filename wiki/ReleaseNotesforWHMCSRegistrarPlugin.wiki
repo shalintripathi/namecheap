@@ -3,7 +3,7 @@
 ==== Version 1.1.4.1 ====
 _(Release Date: Jan 28, 2011)_
 
-* Nextduedate is set the same as expirydate
+  * Nextduedate is set the same as expirydate
 
 ==== Version 1.1.4 ====
 _(Release Date: Dec 08, 2010)_
