@@ -2,15 +2,8 @@
 
 = Namecheap.com WHMCS SSL Module =
 ----
-===Updated Jan 21, 2011 to Version 1.1.0===
-Supports new certificates. Now you can also offer the following SSL certificates to your clients:
-  
-  * !VeriSign Secure Site
-  * !VeriSign Secure Site Pro
-  * !VeriSign Secure Site EV
-  * !VeriSign Secure Site Pro EV
-  * Geotrust TrueBusinessID
-  * Geotrust TrueBusinessID !WildCard
+===Updated Feb 08, 2011 to Version 1.1.1===
+Bug Fix: Automatic order creation bug fixed
 
 ----
 
