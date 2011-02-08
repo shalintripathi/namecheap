@@ -1,5 +1,10 @@
 #summary Changes made in each release.
 
+==== Version 1.1.5 ====
+_(Release Date: Feb 08, 2011)_
+
+  * Functionality to reactivate expired domains added to the renew function
+
 ==== Version 1.1.4.1 ====
 _(Release Date: Jan 28, 2011)_
 
