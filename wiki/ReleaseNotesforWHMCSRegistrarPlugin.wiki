@@ -1,5 +1,10 @@
 #summary Changes made in each release.
 
+====Version 1.1.6====
+_(Release Date: Feb 16, 2011)_
+ 
+ * Feature to synchronize expirydate and nextduedate for all active domains. This feature is useful for expiry date synchronization after domain renewal and reactivation.
+
 ==== Version 1.1.5 ====
 _(Release Date: Feb 08, 2011)_
 
