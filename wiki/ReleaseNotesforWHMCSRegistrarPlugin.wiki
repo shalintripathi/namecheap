@@ -1,5 +1,10 @@
 #summary Changes made in each release.
 
+====Version 1.1.7====
+_(Release Date: Mar 31, 2011)_
+ 
+ * Removed Free PositiveSSL promtional offer.
+
 ====Version 1.1.6====
 _(Release Date: Feb 16, 2011)_
  
