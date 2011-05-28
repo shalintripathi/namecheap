@@ -2,8 +2,8 @@
 
 = Namecheap.com WHMCS SSL Module =
 ----
-===Updated Feb 08, 2011 to Version 1.1.1===
-Bug Fix: Automatic order creation bug fixed
+===Updated May 28, 2011 to Version 1.1.2===
+Bug Fix: Use existing SSL from account bug fixed
 
 ----
 
