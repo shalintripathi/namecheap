@@ -1,5 +1,10 @@
 #summary Release notes for WHMCS SSL Plugin
 
+===Version 1.1.2===
+_Released May 28, 2011_
+ 
+ * Use existing SSL from account bug fixed.
+
 ===Version 1.1.0===
 _Released Jan 21, 2011_
  
