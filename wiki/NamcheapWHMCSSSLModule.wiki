@@ -2,29 +2,41 @@
 
 = Namecheap.com WHMCS SSL Module =
 ----
-===Updated May 28, 2011 to Version 1.1.2===
-Bug Fix: Use existing SSL from account bug fixed
+===Updated Aug 1, 2011 to Version 1.1.3===
+
+  * The list of available SSL Certificates is automatically synchronized with Namecheap.com
+  * Compatibility with the latest version of WHMCS (4.5.2) added
+  * Customization options for “Technical Contact Details” added
+  * SSL Certificate Validity Period configuration process changed. Now validity period is set based on the billing cycle
 
 ----
 
-Namecheap.com SSL module for WHMCS is an open-source plug-in that is distributed free of charge. This module allows you to automate SSL Certificate sales with the Namecheap platform. This allows you to offer the following types of SSL certificates:
+Namecheap.com SSL module for WHMCS is an open-source plugin that is distributed free of charge. This module allows you
+to automate SSL Certificate sales with the Namecheap platform. This allows you to offer the following types of SSL certificates:
 
 *!GeoTrust Cerificates:*
   * RapidSSL
   * RapidSSL Wildcard
-  * !GeoTrust QuickSSL 
-  * !GeoTrust QuickSSL Premium 
+  * !GeoTrust QuickSSL
+  * !GeoTrust QuickSSL Premium
   * !GeoTrust True BusinessID with EV
-  * Geotrust TrueBusinessID
-  * Geotrust TrueBusinessID !WildCard
+  * !GeoTrust TrueBusinessID
+  * !GeoTrust TrueBusinessID !WildCard
 
-*Comodo Certificates:*
+* Comodo Certificates:*
 
   * Comodo PositiveSSL
   * Comodo PositiveSSL Wildcard
   * Comodo InstantSSL
-  * Comodo PremiumSSL
-  
+  * Comodo InstantSSL Pro (new)
+  * Comodo PremiumSSL 
+  * Comodo PremiumSSL Wildcard (new)
+  * Comodo EssentialSSL (new)
+  * Comodo EssentialSSL Wildcard (new)
+  * Comodo EV SSL (new)
+  * Comodo EV SGC SSL (new)
+
+
 *!VeriSign Certificates:*
   
   * !VeriSign Secure Site
@@ -40,46 +52,71 @@ Namecheap.com SSL module for WHMCS is an open-source plug-in that is distributed
 
 _*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please visit the developer's site at http://developer.namecheap.com. 
 
-== Download and Installation ==
-  # Download the latest plugin (namecheap-ssl-whmcs.x.x.x.zip) archive and extract it. 
-  # Create a folder called *namecheapssl* under modules/servers in your WHMCS root directory and paste the downloaded *namecheapssl.php*, *namecheapapi.php*, *namecheapssl_tpl.php* and *viewdetails.tpl* files inside the folder. The plug-in installation is complete. 
+===Sandbox limitations===
+
+Activation process in Sandbox works only for the following SSL Certificates:
+
+*!GeoTrust Cerificates:*
+  * RapidSSL
+  * !GeoTrust QuickSSL
+  * !GeoTrust QuickSSL Premium
+  * !GeoTrust True BusinessID with EV
+  * !GeoTrust TrueBusinessID
+  * !GeoTrust TrueBusinessID WildCard
+
+*!VeriSign Certificates:*
+  * VeriSign Secure Site
+  * VeriSign Secure Site Pro
+  * VeriSign Secure Site EV
+  * VeriSign Secure Site Pro EV
 
 == Setting up the Product and Configuration ==
 
-To setup an SSL certificate product, follow the steps below:
+To setup an SSL certificate product, please follow the steps below:
 
   # Create a product as normal - name, description, no domain options, etc.
-  # Set the billing cycle to One Time and price as the base price for this certificate 
-  # Ensure the welcome email is set to "None" in the dropdown menu as the module sends its own email
-  # On the module settings tab, choose "Namecheapssl" 
-  # Enter your API credentials. If you wish to try out the plug-in in sandbox, make sure to enter your sandbox username, sandbox API key in the corresponding text boxes and check the “Test Mode” box
-  # Choose the certificate type from the drop-down menu and number of years for this product. Detailed registration periods option will show you all possible values for the corresponding type of certificate
-  # Additionally, you can let the client choose these options on the order form and alter the price accordingly using configurable options. The option names supported to override the default settings are "Certificate Type" and/or "Years" - you can use both, just the Years option or even neither
-  # If “Use existing SSL from account” option is checked we will try to use an existing SSL certificate of this type from your Namecheap account first. If there is no SSL available that can be used, new certificate will be purchased.
+  # Ensure the welcome email is set to "None" in the dropdown menu on the Details tab, as the module sends its own email.
+  # In this version, the module billing cycles and SSL validity period are configured via standard WHMCS “Products/Services” settings. To access this, go to the _Pricing_ tab and select ) _Payment Type to Recurring_. Now disable _“One Time/Monthly”_, _“Quarterly”_ and_“Semi-Annualy”_ billing cycles since they are not applicable to SSL Certificates. Finally, specify prices for remaining billing cycles. _“Annually”_ corresponds to 1 year of SSL certificate validity (i.e. the SSL will be registered for 1 year). Biennially and triennially refer to 2 and 3 years respectively.
+  # On the _Module Settings__ tab, choose _"Namecheapssl"_ from Module Name dropdown menu.
+  # Enter your API credentials. If you wish to test this module in sandbox environment, make sure to enter your sandbox username, sandbox API key in the corresponding text fields. Also, be sure to check the “Test Mode”_ box.
+  # Choose the certificate type from the drop-down menu.
+  # If you have a special _“Promotion Code”_, type it into the corresponding text field.
+  # If _“Use existing SSL from account”_ option is checked we will try to use an existing SSL certificate of this type from your Namecheap account first. If there is no SSL available that can be used, a new certificate will be purchased.
+  # The purpose of the next set of fields is to customize the *Technical Contact Details* for any purchased SSL Certificates (fields are shown on a screens shot below). By default, Namecheap Contact details are used (email address sslsupport@namecheap.com). Using a custom Technical Contact Details is useful for resellers who wish to appear as
+an independent business entity to their customers. Depending on whether you want to use custom Technical Contact Details or not, perform the corresponding action:
 
-http://files.namecheap.com/images/googlecode/whmcs-ssl-settings.png
+  * In order to use *Default Technical Email* leave ALL of the fields below empty.
+  * If you wish to use *Custom Technical Email* fill in ALL of the fields below.
+
+http://files.namecheap.com/images/googlecode/product-setup-and-configuration.jpg
 
 ==== Multiple Years ====
-As mentioned above you can allow clients to choose how long the certificate is registered for. To do this you setup the product as normal with a one time cycle and base price of zero. 
+In this version of the module, certificate validity periods are configured via billing cycles. See item #3 from the previous section
+for more information.
 
-Setup a Configurable Option Group in the normal way and add an option named "Years" with a dropdown of the year options and prices in the monthly field. 
-
-That then shows on the product configuration screen for the user to choose from when ordering and the price charged is the value of the option selected. 
-
-For example your configurable option might look like this: 
-http://files.namecheap.com/images/googlecode/whmcs-ssl-pricing-configuration.png
+*Note:* If there are any _Configurable Options_ left from any previous versions of the Namecheap SSL Module, please delete
+them as they may cause errors.
 
 ==== The Order Process ====
 
-The product will appear in the order process as a regular product which can be added to the cart. No configuration is performed before purchase. Once purchased, paid for, and activated, the user is sent an email containing a link which takes them to configure the certificate in the client area. Once all details have been provided, the configuration data is sent to the Certificate Authority for validation. No manual intervention is required from you.
+The product will appear in the order process as a regular product which can be added to the cart. No configuration is performed before purchase. Once a certificate is purchased, paid for, and activated, the user is sent an email containing a link which takes them to configure the certificate in the client area. Once all details have been provided, the configuration data is sent to the Certificate Authority for validation. No manual intervention is required from you.
 
 ==== Certificate Configuration ====
 
-You have an option to resend an email containing a link to the certificate configuration page to the client. This page is also accessible from the client area (My Products & Services -> Product Details -> View Certificate Details). Options to resend approver email and email with the certificate issued are also available in the client area.
+You have an option to resend an email containing a link to the certificate configuration page to the client. This page is also
+accessible from the client area (My Products & Services -> Product Details -> View Certificate Details). Options to resend
+approver email and email with the certificate issued are also available in the client area.
 
 ==== Renewal ====
 
-Due to some limitations in Namecheap API, SSL certificates cannot be renewed. Therefore your clients will need to place a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 renewal CSR] during configuration. This is why we recommend setting up as a one time product in WHMCS. 
+The current version of the module doesn’t contain renewal commands at this time. However, we are working hard to include
+them with the next update which is coming very soon. Most parts of the renewal flow are already integrated with this version.
+All you need to do for now is ensure you have set Payment Type to _“Recurring”_ when creating a product.
+ 
+==== Renew SSL Certificates Created with Previous Versions of the Module ====
+
+Should you need to renew an SSL certificate purchased with a previous version of the module, please ask your clients to place
+a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71/ renewal CSR] during configuration.
 
 == Support ==
 Please use the [http://code.google.com/p/namecheap/issues/list Issues page] to report bugs and provide feedback. Alternatively, you can also [http://support.namecheap.com/ submit a ticket] for assistance.
