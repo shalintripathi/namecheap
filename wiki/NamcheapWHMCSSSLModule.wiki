@@ -77,6 +77,7 @@ To setup an SSL certificate product, please follow the steps below:
   # Create a product as normal - name, description, no domain options, etc.
   # Ensure the welcome email is set to "None" in the dropdown menu on the Details tab, as the module sends its own email.
   # In this version, the module billing cycles and SSL validity period are configured via standard WHMCS “Products/Services” settings. To access this, go to the _Pricing_ tab and select ) _Payment Type to Recurring_. Now disable _“One Time/Monthly”_, _“Quarterly”_ and_“Semi-Annualy”_ billing cycles since they are not applicable to SSL Certificates. Finally, specify prices for remaining billing cycles. _“Annually”_ corresponds to 1 year of SSL certificate validity (i.e. the SSL will be registered for 1 year). Biennially and triennially refer to 2 and 3 years respectively.
+http://files.namecheap.com/images/googlecode/product-setup-and-configuration.jpg
   # On the _Module Settings__ tab, choose _"Namecheapssl"_ from Module Name dropdown menu.
   # Enter your API credentials. If you wish to test this module in sandbox environment, make sure to enter your sandbox username, sandbox API key in the corresponding text fields. Also, be sure to check the “Test Mode”_ box.
   # Choose the certificate type from the drop-down menu.
@@ -88,7 +89,7 @@ an independent business entity to their customers. Depending on whether you want
   * In order to use *Default Technical Email* leave ALL of the fields below empty.
   * If you wish to use *Custom Technical Email* fill in ALL of the fields below.
 
-http://files.namecheap.com/images/googlecode/product-setup-and-configuration.jpg
+http://files.namecheap.com/images/googlecode/customizing-technial-contact-details.jpg
 
 ==== Multiple Years ====
 In this version of the module, certificate validity periods are configured via billing cycles. See item #3 from the previous section
