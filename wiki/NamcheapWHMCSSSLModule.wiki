@@ -9,7 +9,7 @@
   * Customization options for “Technical Contact Details” added
   * SSL Certificate Validity Period configuration process changed. Now validity period is set based on the billing cycle
 
-[http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL / ViewRelease Notes]
+[http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL / View Release Notes]
 
 ----
 
