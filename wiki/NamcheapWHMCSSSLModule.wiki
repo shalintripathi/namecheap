@@ -74,16 +74,25 @@ Activation process in Sandbox works only for the following SSL Certificates:
 
 To setup an SSL certificate product, please follow the steps below:
 
-  # Create a product as normal - name, description, no domain options, etc.
-  # Ensure the welcome email is set to "None" in the dropdown menu on the Details tab, as the module sends its own email.
-  # In this version, the module billing cycles and SSL validity period are configured via standard WHMCS “Products/Services” settings. To access this, go to the _Pricing_ tab and select ) _Payment Type to Recurring_. Now disable _“One Time/Monthly”_, _“Quarterly”_ and_“Semi-Annualy”_ billing cycles since they are not applicable to SSL Certificates. Finally, specify prices for remaining billing cycles. _“Annually”_ corresponds to 1 year of SSL certificate validity (i.e. the SSL will be registered for 1 year). Biennially and triennially refer to 2 and 3 years respectively.
+1. Create a product as normal - name, description, no domain options, etc.
+
+2. Ensure the welcome email is set to "None" in the dropdown menu on the Details tab, as the module sends its own email.
+
+3. In this version, the module billing cycles and SSL validity period are configured via standard WHMCS “Products/Services” settings. To access this, go to the _Pricing_ tab and select _Payment Type to Recurring_. Now disable _“One Time/Monthly”_, _“Quarterly”_ and _“Semi-Annualy”_ billing cycles since they are not applicable to SSL Certificates. Finally, specify prices for remaining billing cycles. _“Annually”_ corresponds to 1 year of SSL certificate validity (i.e. the SSL will be registered for 1 year). Biennially and triennially refer to 2 and 3 years respectively.
+
 http://files.namecheap.com/images/googlecode/product-setup-and-configuration.jpg
-  # On the _Module Settings__ tab, choose _"Namecheapssl"_ from Module Name dropdown menu.
-  # Enter your API credentials. If you wish to test this module in sandbox environment, make sure to enter your sandbox username, sandbox API key in the corresponding text fields. Also, be sure to check the “Test Mode”_ box.
-  # Choose the certificate type from the drop-down menu.
-  # If you have a special _“Promotion Code”_, type it into the corresponding text field.
-  # If _“Use existing SSL from account”_ option is checked we will try to use an existing SSL certificate of this type from your Namecheap account first. If there is no SSL available that can be used, a new certificate will be purchased.
-  # The purpose of the next set of fields is to customize the *Technical Contact Details* for any purchased SSL Certificates (fields are shown on a screens shot below). By default, Namecheap Contact details are used (email address sslsupport@namecheap.com). Using a custom Technical Contact Details is useful for resellers who wish to appear as
+
+4. On the _Module Settings_ tab, choose _"Namecheapssl"_ from Module Name dropdown menu.
+
+5. Enter your API credentials. If you wish to test this module in sandbox environment, make sure to enter your sandbox username, sandbox API key in the corresponding text fields. Also, be sure to check the _“Test Mode”_ box.
+
+6. Choose the certificate type from the drop-down menu.
+
+7. If you have a special _“Promotion Code”_, type it into the corresponding text field.
+
+8. If _“Use existing SSL from account”_ option is checked we will try to use an existing SSL certificate of this type from your Namecheap account first. If there is no SSL available that can be used, a new certificate will be purchased.
+
+9. The purpose of the next set of fields is to customize the *Technical Contact Details* for any purchased SSL Certificates (fields are shown on a screens shot below). By default, Namecheap Contact details are used (email address sslsupport@namecheap.com). Using a custom Technical Contact Details is useful for resellers who wish to appear as
 an independent business entity to their customers. Depending on whether you want to use custom Technical Contact Details or not, perform the corresponding action:
 
   * In order to use *Default Technical Email* leave ALL of the fields below empty.
@@ -117,7 +126,7 @@ All you need to do for now is ensure you have set Payment Type to _“Recurring�
 ==== Renew SSL Certificates Created with Previous Versions of the Module ====
 
 Should you need to renew an SSL certificate purchased with a previous version of the module, please ask your clients to place
-a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71/ renewal CSR] during configuration.
+a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=7/ renewal CSR] during configuration.
 
 == Support ==
 Please use the [http://code.google.com/p/namecheap/issues/list Issues page] to report bugs and provide feedback. Alternatively, you can also [http://support.namecheap.com/ submit a ticket] for assistance.
