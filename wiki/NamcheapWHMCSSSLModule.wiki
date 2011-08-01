@@ -62,13 +62,13 @@ Activation process in Sandbox works only for the following SSL Certificates:
   * !GeoTrust QuickSSL Premium
   * !GeoTrust True BusinessID with EV
   * !GeoTrust TrueBusinessID
-  * !GeoTrust TrueBusinessID WildCard
+  * !GeoTrust TrueBusinessID !WildCard
 
 *!VeriSign Certificates:*
-  * VeriSign Secure Site
-  * VeriSign Secure Site Pro
-  * VeriSign Secure Site EV
-  * VeriSign Secure Site Pro EV
+  * !VeriSign Secure Site
+  * !VeriSign Secure Site Pro
+  * !VeriSign Secure Site EV
+  * !VeriSign Secure Site Pro EV
 
 == Setting up the Product and Configuration ==
 
