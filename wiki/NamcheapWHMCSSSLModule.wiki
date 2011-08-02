@@ -100,7 +100,7 @@ an independent business entity to their customers. Depending on whether you want
   * In order to use *Default Technical Email* leave ALL of the fields below empty.
   * If you wish to use *Custom Technical Email* fill in ALL of the fields below.
 
-http://files.namecheap.com/images/googlecode/customizing-technial-contact-details.jpg
+http://files.namecheap.com/images/googlecode/customizing-technical-contact-details.jpg
 
 ==== Multiple Years ====
 In this version of the module, certificate validity periods are configured via billing cycles. See item #3 from the previous section
