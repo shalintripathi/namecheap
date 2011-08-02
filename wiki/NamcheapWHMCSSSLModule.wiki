@@ -49,7 +49,7 @@ to automate SSL Certificate sales with the Namecheap platform. This allows you t
 === Pre-requisites ===
 
   * Access to WHMCS admin area. 
-  * An understanding of [http://developer.namecheap.com/docs/doku.php?id=overview:2.environments Namecheap’s environments]. 
+  * An understanding of [http://www.namecheap.com/support/api/api.aspx Namecheap’s environments]. 
   * Namecheap account with API access enabled on the desired environment. 
 
 _*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please visit the developer's site at http://developer.namecheap.com. 
