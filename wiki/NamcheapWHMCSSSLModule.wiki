@@ -52,7 +52,7 @@ to automate SSL Certificate sales with the Namecheap platform. This allows you t
   * An understanding of [http://www.namecheap.com/support/api/api.aspx Namecheap’s environments]. 
   * Namecheap account with API access enabled on the desired environment. 
 
-_*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please[http://www.namecheap.com/support/api/api.aspx visit the developer's site].
+_*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please[http://www.namecheap.com/support/api/api.aspx  visit the developer's site].
 
 ===Sandbox limitations===
 
@@ -128,7 +128,7 @@ All you need to do for now is ensure you have set Payment Type to _“Recurring�
 ==== Renew SSL Certificates Created with Previous Versions of the Module ====
 
 Should you need to renew an SSL certificate purchased with a previous version of the module, please ask your clients to place
-a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71/ renewal CSR] during configuration.
+a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 renewal CSR] during configuration.
 
 == Support ==
 Please use the [http://code.google.com/p/namecheap/issues/list Issues page] to report bugs and provide feedback. Alternatively, you can also [http://support.namecheap.com/ submit a ticket] for assistance.
