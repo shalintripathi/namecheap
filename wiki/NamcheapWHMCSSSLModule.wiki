@@ -128,7 +128,7 @@ All you need to do for now is ensure you have set Payment Type to _â€œRecurringâ
 ==== Renew SSL Certificates Created with Previous Versions of the Module ====
 
 Should you need to renew an SSL certificate purchased with a previous version of the module, please ask your clients to place
-a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=7/ renewal CSR] during configuration.
+a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71/ renewal CSR] during configuration.
 
 == Support ==
 Please use the [http://code.google.com/p/namecheap/issues/list Issues page] to report bugs and provide feedback. Alternatively, you can also [http://support.namecheap.com/ submit a ticket] for assistance.
