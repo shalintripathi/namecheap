@@ -52,7 +52,7 @@ to automate SSL Certificate sales with the Namecheap platform. This allows you t
   * An understanding of [http://www.namecheap.com/support/api/api.aspx Namecheap’s environments]. 
   * Namecheap account with API access enabled on the desired environment. 
 
-_*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please[http://www.namecheap.com/support/api/api.aspx / refer the API document].
+_*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please[http://www.namecheap.com/support/api/api.aspx /visit the developer's site].
 
 ===Sandbox limitations===
 
