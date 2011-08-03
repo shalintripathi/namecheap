@@ -2,10 +2,9 @@
 
 = Namecheap.com WHMCS SSL Module =
 ----
-{{{ 
-Please Note: API is currently in public beta. During beta, API Support is available only from 
-Monday - Friday 12:00 AM to 9:00 AM EST.Your support tickets will be replied only during that time. 
-}}}
+<body bgcolor="Silver"><p>
+   Please Note: API is currently in public beta. During beta, API Support is available only from Monday - Friday 12:00 AM to 9:00 AM EST.Your support tickets will be replied only during that time. </p></body>
+
 
 ===Updated Aug 1, 2011 to Version 1.1.3===
 
