@@ -2,7 +2,7 @@
 
 = Namecheap.com WHMCS SSL Module =
 ----
-<font size=3px>* Note:*</font> <font size=3px>_Due to bugs in WHMCS version 4.5.1, some activation issues may take place. Please make sure you update your WHMCS to version 4.5.2 to use current SSL module without errors. _</font>
+<font size=3px>* Note:*</font> <font size=2.5px>_Due to bugs in WHMCS version 4.5.1, some activation issues may take place. Please make sure you update your WHMCS to version 4.5.2 to use current SSL module without errors. _</font>
 
 
 ----
