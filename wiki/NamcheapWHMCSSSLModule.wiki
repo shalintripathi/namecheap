@@ -6,7 +6,7 @@
 
 
 ----
-====Updated on Sep 8, 2011 to Version 1.1.4====
+====Updated on Sep 8, 2011 to Version 1.1.4  ====
 
   *  Maintenance Release
   *  Multilanguage support added
@@ -78,9 +78,9 @@ Activation process in Sandbox works only for the following SSL Certificates:
   * !VeriSign Secure Site Pro EV
 
 == Download and Installation ==
-1. Download the latest plugin (namecheapssl-whmcs-versionX.X.X.zip) archive and extract it.
+1. [http://code.google.com/p/namecheap/downloads/list Download] the latest plugin (namecheapssl-whmcs-versionX.X.X.zip) archive and extract it.
 
-2. Create a folder called namecheapssl under Modules/Servers in your WHMCS root directory and paste the content of the downloaded archive inside the folder (i.e. files viewdetails.tpl, no_approver.tpl, namecheapssl.php, namecheapapi.php and fodlerlang). The SSL module installation is complete.
+2. Create a folder called **namecheapssl** under Modules/Servers in your WHMCS root directory and paste the content of the downloaded **archive** inside the folder (i.e. files viewdetails.tpl, no_approver.tpl, namecheapssl.php, namecheapapi.php and fodlerlang). The SSL module installation is complete.
 == Setting up the Product and Configuration ==
 
 To setup an SSL certificate product, please follow the steps below:
@@ -111,7 +111,7 @@ an independent business entity to their customers. Depending on whether you want
 
 http://files.namecheap.com/images/googlecode/customizing-technical-contact-details.jpg
 
-*Note:* Our ability to provide support to customers who use custom Technical Contact Fields is limited. In case a custom technical contact details are used we cannot perform reissues, resending of approver email/ certificate, cancellation/revocation of Geotrust and Verisign SSL Certificates. However since you possess control over technical contact you can access Geotrust/Verisign Live Account and perform required actions yourself.
+*Note:* Our ability to provide support to customers who use custom **Technical Contact Fields** is limited. In case a custom technical contact details are used we cannot perform reissues, resending of approver email/ certificate, cancellation/revocation of Geotrust and Verisign SSL Certificates. However since you possess control over technical contact you can access Geotrust/Verisign Live Account and perform required actions yourself.
 
 For control of Geotrust SSLs please visit:
 https://products.geotrust.com/orders/orderinformation/authentication.do
@@ -138,7 +138,7 @@ accessible from the client area (My Products & Services -> Product Details -> Vi
 approver email and email with the certificate issued are also available in the client area.
 
 ==== Welcome/Configuration Email ====
-On its first launch Namecheap SSL module automatically creates a configuration email template (see “ SSL Certificate Configuration Required” in section Product Messages of Email Templatesin Setup). It contains link to activation process inside clientarea for a specific SSL certificate.
+On its first launch Namecheap SSL module automatically creates a configuration email template (see “ SSL Certificate Configuration Required” in section Product Messages of **Email Templates** in **Setup**). It contains link to activation process inside client area for a specific SSL certificate.
 
 Sending of SSL Configuration Email is controlled by the following parameters:
 
@@ -151,7 +151,7 @@ You can modify content of the configuration email at any time.
 
 ==== Renewal ====
 
-In version 1.1.4 and above renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to“Recurring”when creating a product, invoices for renewals will be generated automatically. Once paid – renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL is created, it still requires activation using [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 renewal CSR].
+In version 1.1.4 and above renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to “Recurring” when creating a product, invoices for renewals will be generated automatically. Once paid – renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL is created, it still requires activation using [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 renewal CSR].
  
 ==== Renew SSL Certificates Created with Previous Versions of the Module ====
 
