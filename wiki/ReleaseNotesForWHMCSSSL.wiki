@@ -1,7 +1,18 @@
 #summary Release notes for WHMCS SSL Plugin
 
+=== Version 1.1.4  ===
+_Released on Sep 8, 2011_
+
+  *  Maintenance Release
+  *  Multilanguage support added
+  *  Automatic renewal functionality enabled
+  *  “Activation Expiration” compatibility added for “$1.99 upgraded” Free PositiveSSL certs.
+  *  Compatibility with New Namecheap API added
+  *  “Tech Organization Name” field added to Technical Contact details
+  *  Welcome/configuration email sending control functionality added
+
 ===Version 1.1.3===
-_Released Aug 1, 2011_
+_Released on Aug 1, 2011_
 
  * The list of available SSL Certificates is automatically synchronized with Namecheap.com
  * Compatibility with the latest version of WHMCS (4.5.2) added
@@ -9,18 +20,18 @@ _Released Aug 1, 2011_
  * SSL Certificate Validity Period configuration process changed. Now validity period is set based on the billing cycle
 
 ===Version 1.1.2===
-_Released May 28, 2011_
+_Released on May 28, 2011_
  
  * Bug Fix: Use existing SSL from account bug fixed.
 
 ===Version 1.1.0===
-_Released Jan 21, 2011_
+_Released on Jan 21, 2011_
  
  * Support for !VeriSign Secure Site, !VeriSign Secure Site Pro, !VeriSign Secure Site EV, !VeriSign Secure Site Pro EV, Geotrust TrueBusinessID and Geotrust TrueBusinessID !WildCard certificates.
 
  * Initial Release
 
 ===Version 1.0.0===
-_Released Nov 07, 2010_
+_Released on Nov 07, 2010_
 
  * Initial Release
