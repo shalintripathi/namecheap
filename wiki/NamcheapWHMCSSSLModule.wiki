@@ -1,17 +1,20 @@
 #summary Namecheap.com WHMCS SSL Module (SSL Plugin)
 
-= Namecheap.com WHMCS SSL Module (v 1.1.3) =
+= Namecheap.com WHMCS SSL Module (v 1.1.4) =
 ----
 <font size=3px>* Note:*</font> <font size=2.5px>_Due to bugs in WHMCS version 4.5.1, some activation issues may take place. Please make sure you update your WHMCS to version 4.5.2 to use current SSL module without errors. _</font>
 
 
 ----
-====Updated on Aug 1, 2011 to Version 1.1.3====
+====Updated on Sep 8, 2011 to Version 1.1.4====
 
-  * The list of available SSL Certificates is automatically synchronized with Namecheap.com
-  * Compatibility with the latest version of WHMCS (4.5.2) added
-  * Customization options for “Technical Contact Details” added
-  * SSL Certificate Validity Period configuration process changed. Now validity period is set based on the billing cycle
+  *  Maintenance Release
+  *  Multilanguage support added
+  *  Automatic renewal functionality enabled
+  *  “Activation Expiration” compatibility added for “$1.99 upgraded” Free PositiveSSL certs.
+  *  Compatibility with New Namecheap API added
+  *  “Tech Organization Name” field added to Technical Contact details
+  *  Welcome/configuration email sending control functionality added
 
 [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
@@ -74,6 +77,10 @@ Activation process in Sandbox works only for the following SSL Certificates:
   * !VeriSign Secure Site EV
   * !VeriSign Secure Site Pro EV
 
+== Download and Installation ==
+1. Download the latest plugin (namecheapssl-whmcs-versionX.X.X.zip) archive and extract it.
+
+2. Create a folder called namecheapssl under Modules/Servers in your WHMCS root directory and paste the content of the downloaded archive inside the folder (i.e. files viewdetails.tpl, no_approver.tpl, namecheapssl.php, namecheapapi.php and fodlerlang). The SSL module installation is complete.
 == Setting up the Product and Configuration ==
 
 To setup an SSL certificate product, please follow the steps below:
@@ -104,6 +111,15 @@ an independent business entity to their customers. Depending on whether you want
 
 http://files.namecheap.com/images/googlecode/customizing-technical-contact-details.jpg
 
+*Note:* Our ability to provide support to customers who use custom Technical Contact Fields is limited. In case a custom technical contact details are used we cannot perform reissues, resending of approver email/ certificate, cancellation/revocation of Geotrust and Verisign SSL Certificates. However since you possess control over technical contact you can access Geotrust/Verisign Live Account and perform required actions yourself.
+
+For control of Geotrust SSLs please visit:
+https://products.geotrust.com/orders/orderinformation/authentication.do
+
+For control of Verisign SSLs please visit:
+https://products.verisign.com/orders/orderinformation/authentication.do
+
+
 ==== Multiple Years ====
 In this version of the module, certificate validity periods are configured via billing cycles. See item #3 from the previous section
 for more information.
@@ -121,11 +137,21 @@ You have an option to resend an email containing a link to the certificate confi
 accessible from the client area (My Products & Services -> Product Details -> View Certificate Details). Options to resend
 approver email and email with the certificate issued are also available in the client area.
 
+==== Welcome/Configuration Email ====
+On its first launch Namecheap SSL module automatically creates a configuration email template (see “ SSL Certificate Configuration Required” in section Product Messages of Email Templatesin Setup). It contains link to activation process inside clientarea for a specific SSL certificate.
+
+Sending of SSL Configuration Email is controlled by the following parameters:
+
+Type of product setup behavior in Module Settings tab:
+
+1. Configuration email is always sent for options “Automatically setup the product as soon as an order is placed” and “Automatically setup the product as soon as the first payment is received”.
+2. If the options “Automatically setup the product when you manually accept a pending order” or “Do not automatically setup this product” are selected, then sending of the Configuration Email will depend on the box “Send Welcome Email”:
+
+You can modify content of the configuration email at any time. 
+
 ==== Renewal ====
 
-The current version of the module doesn’t contain renewal commands at this time. However, we are working hard to include
-them with the next update which is coming very soon. Most parts of the renewal flow are already integrated with this version.
-All you need to do for now is ensure you have set Payment Type to _“Recurring”_ when creating a product.
+In version 1.1.4 and above renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to“Recurring”when creating a product, invoices for renewals will be generated automatically. Once paid – renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL is created, it still requires activation using [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 renewal CSR].
  
 ==== Renew SSL Certificates Created with Previous Versions of the Module ====
 
