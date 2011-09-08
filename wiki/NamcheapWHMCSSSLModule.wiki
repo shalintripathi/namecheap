@@ -147,6 +147,7 @@ Type of product setup behavior in Module Settings tab:
 http://files.namecheap.com/images/googlecode/product-setup-behaviour-type.jpg
 
 1. Configuration email is always sent for options “Automatically setup the product as soon as an order is placed” and “Automatically setup the product as soon as the first payment is received”.
+
 2. If the options “Automatically setup the product when you manually accept a pending order” or “Do not automatically setup this product” are selected, then sending of the Configuration Email will depend on the box “Send Welcome Email”:
 
 http://files.namecheap.com/images/googlecode/welcome-email.jpg
