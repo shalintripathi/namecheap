@@ -138,7 +138,7 @@ accessible from the client area (My Products & Services -> Product Details -> Vi
 approver email and email with the certificate issued are also available in the client area.
 
 ==== Welcome/Configuration Email ====
-On its first launch, Namecheap SSL module automatically creates a configuration email template (see “ SSL Certificate Configuration Required” in section "Product Messages" of **Email Templates** in **Setup**). It contains link to activation process inside your client area for a specific SSL certificate.
+On its first launch, Namecheap SSL module automatically creates a configuration email template (see “SSL Certificate Configuration Required” in section "Product Messages" of **Email Templates** in **Setup**). It contains link to activation process inside your client area for a specific SSL certificate.
 
 Sending of SSL Configuration Email is controlled by the following parameters:
 
