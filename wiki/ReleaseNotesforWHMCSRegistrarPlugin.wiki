@@ -1,5 +1,11 @@
 #summary Changes made in each release.
 
+====Version 1.1.8====
+_(Release Date: Sep 29, 2011)_
+ 
+  * Fixed showing of Whoisguard related error messages in the Client Area
+  * Improved Sync script to produce more detailed report on dates synchronisation 
+
 ====Version 1.1.7====
 _(Release Date: Mar 31, 2011)_
  
