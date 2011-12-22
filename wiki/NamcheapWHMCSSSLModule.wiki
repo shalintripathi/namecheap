@@ -6,16 +6,9 @@
 
 
 ----
-====Updated on Sep 8, 2011 to Version 1.1.4  ====
+====Updated on Dec 22, 2011 to Version 1.1.5  ====
 
-  *  Maintenance Release
-  *  Multilanguage support added
-  *  Automatic renewal functionality enabled
-  *  “Activation Expiration” compatibility added for “$1.99 upgraded” Free PositiveSSL certs.
-  *  Compatibility with New Namecheap API added
-  *  “Tech Organization Name” field added to Technical Contact details
-  *  Welcome/configuration email sending control functionality added
-
+  *  Compatibility with the latest Symantec API for Organization and Extended validation added.
 [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
 Namecheap.com SSL module for WHMCS is an open-source plugin that is distributed free of charge. This module allows you
