@@ -1,5 +1,10 @@
 #summary Release notes for WHMCS SSL Plugin
 
+=== Version 1.1.5  ===
+_Released on Dec 22, 2011_
+
+  *   Compatibility with the latest Symantec API for Organization and Extended validation added.
+
 === Version 1.1.4  ===
 _Released on Sep 8, 2011_
 
