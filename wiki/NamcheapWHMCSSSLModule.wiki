@@ -1,15 +1,25 @@
 #summary Namecheap.com WHMCS SSL Module (SSL Plugin)
 
-= Namecheap.com WHMCS SSL Module (v 1.1.4) =
+= Namecheap.com WHMCS SSL Module (v 1.2) =
 ----
 <font size=3px>* Note:*</font> <font size=2.5px>_Due to bugs in WHMCS version 4.5.1, some activation issues may take place. Please make sure you update your WHMCS to version 4.5.2 to use current SSL module without errors. _</font>
 
 
 ----
-====Updated on Dec 22, 2011 to Version 1.1.5  ====
+===Updated on Mar 30th, 2012 to Version 1.2  ===
 
-  *  Compatibility with the latest Symantec API for Organization and Extended validation added.
+  *  Reissue functionality for Comodo SSL Certificates
+  *  Synchronize due date and reissue state functionality
+  *  View certificate details (including Namecheap Order ID and Certificate ID)
+  *  Debug Mode for troubleshooting issues (log Namecheap API events)
+
 [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
+
+===What’s New in Module v 1.2===
+
+We have introduced 3 new functionalities within this latest update, which includes reissue of Comodo certificates from WHMCS client area, synchronization ofcertificate changes such as due dates and reissue states with Namecheap backend and functionality to view certificate details (such as Namecheap Certificate ID, Order ID, Status etc.)
+
+*So let’s get started…*
 
 Namecheap.com SSL module for WHMCS is an open-source plugin that is distributed free of charge. This module allows you
 to automate SSL Certificate sales with the Namecheap platform. This allows you to offer the following types of SSL certificates:
@@ -71,9 +81,17 @@ Activation process in Sandbox works only for the following SSL Certificates:
   * !VeriSign Secure Site Pro EV
 
 == Download and Installation ==
-1. [http://code.google.com/p/namecheap/downloads/list Download] the latest plugin (namecheapssl-whmcs-versionX.X.X.zip) archive and extract it.
+1. Download the latest plugin (namecheapssl-whmcs-versionX.X.X.zip) archive and extract it. In the archive you will find 3 folders: 
+  *  namecheapssl-module-v1.2
+  *  namecheapssl-addon-v1.2
+  *  namecheapssl-hook-v1.2
 
-2. Create a folder called **namecheapssl** under Modules/Servers in your WHMCS root directory and paste the content of the downloaded **archive** inside the folder (i.e. files viewdetails.tpl, no_approver.tpl, namecheapssl.php, namecheapapi.php and fodlerlang). The SSL module installation is complete.
+2. *Install Module*. Create a folder called ‘*namecheapssl *’  under */modules/servers/* in your WHMCS root directory and paste the content of the folder namecheapssl-module-v1.2 into */modules/servers/namecheapssl/*. To finalize the installation please go to http://yourdomain.com/modules/servers/namecheapssl/install.php (given you have WHMCS installed on http://yourdomain.com/. If you have it installed on http://yourdomain.com/whmcs/ then you will need to go to http://yourdomain.com/whmcs/modules/servers/namecheapssl/install.php and so on).The SSL Module installation is now complete.
+
+3. *Install Hook*. Paste the content of the folder namecheapssl-hook-v1.2 inside */includes/hooks/* in your WHMCS root directory. The SSL ModuleHook installation is complete now.
+
+4. *Install Addon*. Create a folder called namecheapssl under */modules/admin/* in your WHMCS root directory and paste the content of the folder namecheapssl-addon-v1.2 inside the folder. Now please go to ‘Setup >Addon Modules’ in your WHMCS Admin area and activate the addon. Then go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl(given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete.
+
 == Setting up the Product and Configuration ==
 
 To setup an SSL certificate product, please follow the steps below:
@@ -84,7 +102,7 @@ To setup an SSL certificate product, please follow the steps below:
 
 3. In this version, the module billing cycles and SSL validity period are configured via standard WHMCS “Products/Services” settings. To access this, go to the _Pricing_ tab and select _Payment Type to Recurring_. Now disable _“One Time/Monthly”_, _“Quarterly”_ and _“Semi-Annualy”_ billing cycles since they are not applicable to SSL Certificates. Finally, specify prices for remaining billing cycles. _“Annually”_ corresponds to 1 year of SSL certificate validity (i.e. the SSL will be registered for 1 year). Biennially and triennially refer to 2 and 3 years respectively.
 
-http://files.namecheap.com/images/googlecode/product-setup-and-configuration.jpg
+  http://files.namecheap.com/images/googlecode/product-setup-and-configuration.jpg
 
 4. On the _Module Settings_ tab, choose _"Namecheapssl"_ from Module Name dropdown menu.
 
@@ -102,7 +120,7 @@ an independent business entity to their customers. Depending on whether you want
   * In order to use *Default Technical Email* leave ALL of the fields below empty.
   * If you wish to use *Custom Technical Email* fill in ALL of the fields below.
 
-http://files.namecheap.com/images/googlecode/customizing-technical-contact-details.jpg
+  http://files.namecheap.com/images/googlecode/customizing-technical-contact-details.jpg
 
 *Note:* Our ability to provide support to customers who use custom **Technical Contact Fields** is limited. In case custom technical contact details are used, we cannot perform reissues, resending of approver email/ certificate, or cancellation/revocation of GeoTrust and VeriSign SSL Certificates. However, since you possess control over technical contact, you can access GeoTrust/VeriSign Live Account and perform these required actions yourself.
 
@@ -130,6 +148,16 @@ You have an option to resend an email containing a link to the certificate confi
 accessible from the client area (My Products & Services -> Product Details -> View Certificate Details). Options to resend
 approver email and email with the certificate issued are also available in the client area.
 
+==== Debugging Mode ====
+Special debugging mode was added in release v 1.2. Enabling this mode will cause logging of all API related events using the NamecheapSSL Module Addon. Debugging mode is WHMCS products specific, so that you can activate it for specific products. Normally you should keep this mode disabled. Enable it only when advised by Namecheap Support team.
+To enable it go to “Products/Services” settings and check the box “Debug Mode”:
+
+  http://files.namecheap.com/images/googlecode/debug-mode.jpg
+
+Now all Namecheap API related events will be logged by NamecheapSSL Moduleaddon:
+
+  http://files.namecheap.com/images/googlecode/namecheapssl-addon.jpg
+
 ==== Welcome/Configuration Email ====
 On its first launch, Namecheap SSL module automatically creates a configuration email template (see “SSL Certificate Configuration Required” in section "Product Messages" of **Email Templates** in **Setup**). It contains link to activation process inside your client area for a specific SSL certificate.
 
@@ -156,6 +184,38 @@ In version 1.1.4 and above, renewal functionality is fully integrated into the m
 
 Should you need to renew an SSL certificate purchased with a previous version of the module, please ask your clients to place
 a new order when the certificate is due for renewal and use [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 renewal CSR] during configuration.
+
+==== Reissue ====
+Go to ‘Clients Profile > Products and Services’
+
+  http://files.namecheap.com/images/googlecode/reissue-certificate.jpg
+
+Clicking reissue will send an email to a customer with a subject ‘SSL Certificate Reissue Invitation’. The email contains a link to proceed with reissue.
+Certificate status changes to ‘Awaiting configuration’.
+‘Reissue Certificate’ is also available from customer’s end in client 
+area. This feature is shown for active certificates only:
+
+  http://files.namecheap.com/images/googlecode/reissue-comodo-certificate.jpg
+
+Clicking this button makes all _Comodo_ certificates status change to ‘Awaiting configuration’; as for other brands, you will be redirected to a corresponding certificate authority reissue page. 
+To complete the process, please follow the instructions from the confirmation email sent by a certificate authority.
+Reissuing a certificate will change its Namecheap Certificate ID.
+
+==== Synchronize due date and reissue state ====
+All changes done in WHMCS are synchronized with your Namecheap account automatically once a day (when WHMCS cron runs). Also you can perform manual synchronization any time by clicking ‘Synchronize due date and reissue state’. This will set WHMCS due dates and reissue states in sync with Namecheap admin area when needed:
+
+  http://files.namecheap.com/images/googlecode/sync-due-date-and-reissue.jpg
+
+==== View Details ====
+Now you can also view certificate details from a client’s profile ‘Products and Services’ tab.
+
+  http://files.namecheap.com/images/googlecode/view-details.jpg
+
+Here you can check certificate status, status descriptions, certificate type, view CSR in raw format and decoded, see issuance and expiration date, etc.
+
+    http://files.namecheap.com/images/googlecode/view-csr-details.jpg
+
+Each successful operation is confirmed by ‘Module Command Success’ message.
 
 == Support ==
 Please use the [http://code.google.com/p/namecheap/issues/list Issues page] to report bugs and provide feedback. Alternatively, you can also [http://support.namecheap.com/ submit a ticket] for assistance.
