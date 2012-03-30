@@ -122,12 +122,12 @@ an independent business entity to their customers. Depending on whether you want
 
   http://files.namecheap.com/images/googlecode/customizing-technical-contact-details.jpg
 
-*Note:* Our ability to provide support to customers who use custom **Technical Contact Fields** is limited. In case custom technical contact details are used, we cannot perform reissues, resending of approver email/ certificate, or cancellation/revocation of !GeoTrust and !VeriSign SSL Certificates. However, since you possess control over technical contact, you can access GeoTrust/VeriSign Live Account and perform these required actions yourself.
+*Note:* Our ability to provide support to customers who use custom **Technical Contact Fields** is limited. In case custom technical contact details are used, we cannot perform reissues, resending of approver email/ certificate, or cancellation/revocation of !GeoTrust and !VeriSign SSL Certificates. However, since you possess control over technical contact, you can access !GeoTrust/!VeriSign Live Account and perform these required actions yourself.
 
-For control of GeoTrust SSLs, please visit:
+For control of !GeoTrust SSLs, please visit:
 https://products.geotrust.com/orders/orderinformation/authentication.do
 
-For control of VeriSign SSLs, please visit:
+For control of !VeriSign SSLs, please visit:
 https://products.verisign.com/orders/orderinformation/authentication.do
 
 
