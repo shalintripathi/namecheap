@@ -19,7 +19,7 @@
 
 We have introduced 3 new functionalities within this latest update, which includes reissue of Comodo certificates from WHMCS client area, synchronization ofcertificate changes such as due dates and reissue states with Namecheap backend and functionality to view certificate details (such as Namecheap Certificate ID, Order ID, Status etc.)
 
-*So let’s get started…*
+===So let’s get started…===
 
 Namecheap.com SSL module for WHMCS is an open-source plugin that is distributed free of charge. This module allows you
 to automate SSL Certificate sales with the Namecheap platform. This allows you to offer the following types of SSL certificates:
@@ -171,7 +171,7 @@ http://files.namecheap.com/images/googlecode/product-setup-behaviour-type.jpg
 
 2. If the options “Automatically setup the product when you manually accept a pending order” or “Do not automatically setup this product” are selected, then sending of the Configuration Email will depend on the box “Send Welcome Email”:
 
-http://files.namecheap.com/images/googlecode/welcome-email.jpg
+  http://files.namecheap.com/images/googlecode/welcome-email.jpg
 
 
 You can modify content of the configuration email at any time. 
@@ -213,7 +213,7 @@ Now you can also view certificate details from a client’s profile ‘Products 
 
 Here you can check certificate status, status descriptions, certificate type, view CSR in raw format and decoded, see issuance and expiration date, etc.
 
-    http://files.namecheap.com/images/googlecode/view-csr-details.jpg
+  http://files.namecheap.com/images/googlecode/view-csr-details.jpg
 
 Each successful operation is confirmed by ‘Module Command Success’ message.
 
