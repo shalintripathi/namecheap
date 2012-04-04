@@ -90,7 +90,7 @@ Activation process in Sandbox works only for the following SSL Certificates:
 
 3. *Install Hook*. Paste the content of the folder namecheapssl-hook-v1.2 inside */includes/hooks/* in your WHMCS root directory. The SSL ModuleHook installation is complete now.
 
-4. *Install Addon*. Create a folder called namecheapssl under */modules/admin/* in your WHMCS root directory and paste the content of the folder namecheapssl-addon-v1.2 inside the folder. Now please go to ‘Setup >Addon Modules’ in your WHMCS Admin area and activate the addon. Then go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl(given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete.
+4. *Install Addon*. Create a folder called '*namecheapssl *' under */modules/admin/* in your WHMCS root directory and paste the content of the folder namecheapssl-addon-v1.2 inside the folder. Now please go to ‘Setup >Addon Modules’ in your WHMCS Admin area and activate the addon. Then go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl (given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete.
 
 == Setting up the Product and Configuration ==
 
