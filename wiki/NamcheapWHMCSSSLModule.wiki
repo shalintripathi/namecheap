@@ -6,15 +6,10 @@
 
 
 ----
-===Updated on Mar 30th, 2012 to Version 1.2.1  ===
+===Updated on Apr 8, 2012 to Version 1.2.1  ===
 
   *  Additional compatibility with WHMCS 5.x version added.
-  *  Reissue functionality for Comodo SSL Certificates
-  *  Synchronize due date and reissue state functionality
-  *  View certificate details (including Namecheap Order ID and Certificate ID)
-  *  Debug Mode for troubleshooting issues (log Namecheap API events)
-
-[http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
+ [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
 ===What’s New in Module v 1.2.1 ===
 
