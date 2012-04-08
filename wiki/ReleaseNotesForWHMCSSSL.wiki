@@ -8,7 +8,6 @@ _Released on Apr 8, 2012_
 === Version 1.2  ===
 _Released on Mar 30, 2012_
 
-  *  Additional compatibility with WHMCS 5.x version added.
   *  Reissue functionality for Comodo SSL Certificates
   *  Synchronize due date and reissue state functionality
   *  View certificate details (including Namecheap Order ID and Certificate ID)
