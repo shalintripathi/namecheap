@@ -1,5 +1,20 @@
 #summary Release notes for WHMCS SSL Plugin
 
+=== Version 1.2.1  ===
+_Released on Apr 8, 2012_
+
+  *  Additional compatibility with WHMCS 5.x version added.
+  
+=== Version 1.2  ===
+_Released on Mar 30, 2012_
+
+  *  Additional compatibility with WHMCS 5.x version added.
+  *  Reissue functionality for Comodo SSL Certificates
+  *  Synchronize due date and reissue state functionality
+  *  View certificate details (including Namecheap Order ID and Certificate ID)
+  *  Debug Mode for troubleshooting issues (log Namecheap API events)
+
+
 === Version 1.1.5  ===
 _Released on Dec 22, 2011_
 
