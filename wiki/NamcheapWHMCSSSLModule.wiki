@@ -50,13 +50,23 @@ to automate SSL Certificate sales with the Namecheap platform. This allows you t
   * !VeriSign Secure Site EV
   * !VeriSign Secure Site Pro EV
 
+----
+<font size=3px>* Note:*</font> <font size=2.5px>_Note: Thawte SSL Certificates are not supported by the API as of today, even though they are available for selection in the module. Attempting to purchase and activate Thawte Certificates will result in an error. _</font>
+
+
+----
+
 === Pre-requisites ===
 
   * Access to WHMCS admin area. 
   * An understanding of [http://www.namecheap.com/support/api/api.aspx Namecheap’s environments]. 
   * Namecheap account with API access enabled on the desired environment. 
 
-_*NOTE:*_ Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please [http://www.namecheap.com/support/api/api.aspx  visit the developer's site].
+----
+<font size=3px>* Note:*</font> <font size=2.5px>_Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. For more detailed information, please [http://www.namecheap.com/support/api/api.aspx  visit the developer's site]. _</font>
+
+
+----
 
 ===Sandbox limitations===
 
