@@ -1,4 +1,30 @@
-#summary Changes made in each release.
+#summary Changes made in each release of Namecheap.com WHMCS Registrar Plugin.
+
+====Version 1.1.10 for WHMCS 4====
+_(Release Date: May 3, 2012)_
+
+  * Fixed issue with incorrect parameters on domain contact details saving.
+  * Replaced classes !NamecheapApi and !NamecheapApiException with !NamecheapRegistrarApi and !NamecheapRegistrarApiException to avoid conflict with Namecheap SSL module.
+  * Added default params for .de domains to request(DEConfirmAddress=DE,DEAgreeDelete=Yes)
+  * Added Base64 encoding for EPPCode.
+  * Fixed bug with parsing domain transfer data that prevent domains from being recognized as already transferred.
+
+====Version 1.2.2 for WHMCS 5====
+_(Release Date: May 3, 2012)_
+  * Fixed issue with incorrect parameters on domain contact details saving.
+  * Replace classes !NamecheapApi and !NamecheapApiException with !NamecheapRegistrarApi and !NamecheapRegistrarApiException to avoid conflict with Namecheap SSL module
+  * Added default params for .de domains to request(DEConfirmAddress=DE,DEAgreeDelete=Yes)
+  * Added Base64 encoding for EPPCode.
+  * Fixed bug with parsing domain transfer data that prevent domains from being recognized as already transferred.
+  * Removed custom client warnings regarding Whoisguard. 
+  * Dropped .asia domain entries in favor of the standard WHMCS.NOTE: Unfortunately, you still need to add this code right after other $additionaldomainfields[".asia"][] entries in the file includes/additionaldomainfields.php
+{{{
+$additionaldomainfields[".asia"][] = array(
+"Name" => "Locality",
+"Type" => "dropdown",
+"Options" => "af,bd,ck,in,jp,kg,mh,nz,ps,sg,th,tv,aq,bt,cy,id,kz,la,fm,nu,pg,sb,tl,ae,am,bn,fj,ir,ki,lb,mn,nf,ph,lk,tk,uz,au,kh,ge,iq,kp,mo,mm,om,qa,sy,to,vu,az,cn,hm,il,kr,my,nr,pk,ws,tw,tr,vn,bh,cc,hk,jo,kw,mv,np,pw,sa,tj,tm,ye"
+);
+}}}
 
 ====Version 1.1.8====
 _(Release Date: Sep 29, 2011)_
