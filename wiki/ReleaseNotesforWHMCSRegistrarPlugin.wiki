@@ -1,5 +1,15 @@
 #summary Changes made in each release of Namecheap.com WHMCS Registrar Plugin.
 
+====Version 1.1.11 for WHMCS 4====
+_(Release Date: Jun 19, 2012)_
+
+ * Fixed domain name case sensitivity in the sync script
+
+====Version 1.2.3 for WHMCS 5====
+_(Release Date: Jun 19, 2012)_
+
+Fixed domain name case sensitivity in the sync script
+
 ====Version 1.1.10 for WHMCS 4====
 _(Release Date: May 3, 2012)_
 
