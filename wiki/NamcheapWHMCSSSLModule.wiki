@@ -1,14 +1,19 @@
 #summary Namecheap.com WHMCS SSL Module (SSL Plugin)
 
-= Namecheap.com WHMCS SSL Module (v 1.2.1) =
+= Namecheap.com WHMCS SSL Module (v 1.2.2) =
 ----
 <font size=3px>* Note:*</font> <font size=2.5px>_Due to bugs in WHMCS version 4.5.1, some activation issues may take place. Please make sure you update your WHMCS to version 4.5.2 to use current SSL module without errors. _</font>
 
 
 ----
-===Updated on Apr 8, 2012 to Version 1.2.1  ===
+===Updated on Apr 8, 2012 to Version 1.2.2  ===
 
-  *  Additional compatibility with WHMCS 5.x version added.
+  *  Installation mechanism improved.
+
+  *  Database related error during installation fixed.
+
+  *  New 'Callback Contact Fields' added for organization validation comodo certificates.
+
  [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
 ===What’s New in Module v 1.2.1 ===
@@ -87,16 +92,16 @@ Activation process in Sandbox works only for the following SSL Certificates:
   * !VeriSign Secure Site Pro EV
 
 == Download and Installation ==
-1. Download the latest plugin (namecheapssl-whmcs-versionX.X.X.zip) archive and extract it. In the archive you will find 3 folders: 
-  *  namecheapssl-module-v1.2.1
-  *  namecheapssl-addon-v1.2.1
-  *  namecheapssl-hook-v1.2.1
 
-2. *Install Module*. Create a folder called ‘*namecheapssl *’  under */modules/servers/* in your WHMCS root directory and paste the content of the folder namecheapssl-module-v1.2 into */modules/servers/namecheapssl/*. To finalize the installation please go to http://yourdomain.com/modules/servers/namecheapssl/install.php (given you have WHMCS installed on http://yourdomain.com/. If you have it installed on http://yourdomain.com/whmcs/ then you will need to go to http://yourdomain.com/whmcs/modules/servers/namecheapssl/install.php and so on).The SSL Module installation is now complete.
+1. Extract attached archive. In the archive you will find 3 folders:
+  *  namecheapssl-module-v1.2.2
+  *  namecheapssl-addon-v1.2.2
+  *  namecheapssl-hook-v1.2.2
 
-3. *Install Hook*. Paste the content of the folder namecheapssl-hook-v1.2 inside */includes/hooks/* in your WHMCS root directory. The SSL ModuleHook installation is complete now.
+2. Install Module. Create a folder called 'namecheapssl ' under /modules/servers/ in your WHMCS root directory and paste the content of the folder namecheapssl-module-v1.2.2 into /modules/servers/namecheapssl/. The SSL Module installation is now complete.
+3. Install Hook. Paste the content of the folder namecheapssl-hook-v1.2.2 inside /includes/hooks/ in your WHMCS root directory. The SSL ModuleHook installation is complete now.
 
-4. *Install Addon*. Create a folder called '*namecheapssl *' under */modules/admin/* in your WHMCS root directory and paste the content of the folder namecheapssl-addon-v1.2 inside the folder. Now please go to ‘Setup >Addon Modules’ in your WHMCS Admin area and activate the addon. Then go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl (given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete.
+4. Install Addon. Create a folder called 'namecheapssl ' under /modules/admin/ in your WHMCS root directory and paste the content of the folder namecheapssl-addon-v1.2.2 inside the folder. Now please go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl (given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete. Note: if you don't have folder /modules/admin/ - feel free to create it manually.
 
 == Setting up the Product and Configuration ==
 
