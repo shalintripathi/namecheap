@@ -16,10 +16,6 @@
 
  [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
-===What’s New in Module v 1.2.1 ===
-
-We have introduced 3 new functionalities within this latest update, which includes reissue of Comodo certificates from WHMCS client area, synchronization ofcertificate changes such as due dates and reissue states with Namecheap backend and functionality to view certificate details (such as Namecheap Certificate ID, Order ID, Status etc.)
-
 ===So let’s get started…===
 
 Namecheap.com SSL module for WHMCS is an open-source plugin that is distributed free of charge. This module allows you
