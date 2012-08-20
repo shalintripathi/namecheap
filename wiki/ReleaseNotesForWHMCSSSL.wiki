@@ -1,5 +1,16 @@
 #summary Release notes for WHMCS SSL Plugin
 
+
+=== Version 1.2.2  ===
+_Released on Aug 20, 2012_
+
+  *  Installation mechanism improved.
+
+  *  Database related error during installation fixed.
+
+  *  New 'Callback Contact Fields' added for organization validation comodo certificates.
+
+
 === Version 1.2.1  ===
 _Released on Apr 8, 2012_
 
