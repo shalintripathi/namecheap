@@ -6,7 +6,7 @@
 
 
 ----
-===Updated on Apr 8, 2012 to Version 1.2.2  ===
+===Updated on Aug 8, 2012 to Version 1.2.2  ===
 
   *  Installation mechanism improved.
 
