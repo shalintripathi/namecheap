@@ -3,7 +3,7 @@
 === Version 1.2.3 ===
 _Released on Oct 13, 2012_
 
-  * Renewal bug related to error <em>[2011300]</em> fixed. 
+  * Renewal bug related to error 2011300 fixed. 
 
   * "Use existing SSL from account" bug related to mismatch of product names fixed. 
 
