@@ -6,13 +6,11 @@
 
 
 ----
-===Updated on Aug 20, 2012 to Version 1.2.2  ===
+===Updated on Oct 13, 2012 to Version 1.2.3  ===
 
-  *  Installation mechanism improved.
+  * Renewal bug related to error [2011300] fixed.
 
-  *  Database related error during installation fixed.
-
-  *  New 'Callback Contact Fields' added for organization validation comodo certificates.
+  * "Use existing SSL from account" bug related to mismatch of product names fixed.
 
  [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
