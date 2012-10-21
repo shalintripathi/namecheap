@@ -6,11 +6,10 @@
 
 
 ----
-===Updated on Oct 13, 2012 to Version 1.2.3  ===
+===Updated on Oct 13, 2012 to Version 1.2.4  ===
 
-  * Renewal bug related to error 2011300 fixed.
+  * "Use existing SSL from account" bug related to absence of eligible products fixed.
 
-  * "Use existing SSL from account" bug related to mismatch of product names fixed.
 
  [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
