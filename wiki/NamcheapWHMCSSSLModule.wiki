@@ -6,9 +6,10 @@
 
 
 ----
-===Updated on Oct 21, 2012 to Version 1.2.4  ===
+===Updated on Oct 25, 2012 to Version 1.2.6  ===
 
-  * "Use existing SSL from account" bug related to absence of eligible products fixed.
+  * Products/Services Configuration bug fixed.
+  * Callback details for DV SSLs bug fixed.
 
 
  [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
