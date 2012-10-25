@@ -1,5 +1,11 @@
 #summary Release notes for WHMCS SSL Plugin
 
+=== Version 1.2.6 ===
+_Released on Oct 25, 2012_
+
+  *  Products/Services Configuration bug fixed.
+  * Callback details for DV SSLs bug fixed. 
+
 === Version 1.2.4 ===
 _Released on Oct 21, 2012_
 
