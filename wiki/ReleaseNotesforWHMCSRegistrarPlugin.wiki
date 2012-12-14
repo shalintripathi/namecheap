@@ -1,5 +1,10 @@
 #summary Changes made in each release of Namecheap.com WHMCS Registrar Plugin.
 
+====Version 1.2.5 for WHMCS 5====
+_(Release Date: Dec 14, 2012)_
+
+ * Added logs on exceptions
+
 ====Version 1.1.12 for WHMCS 4====
 _(Release Date: Jul 25, 2012)_
 
