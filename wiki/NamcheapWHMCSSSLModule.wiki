@@ -1,10 +1,12 @@
 #summary Namecheap.com WHMCS SSL Module (SSL Plugin)
 
 = Namecheap.com WHMCS SSL Module (v 1.2.6) =
+
 ----
-<font size=3px>* Note:*</font> <font size=2.5px>_Due to bugs in WHMCS version 4.5.1, some activation issues may take place. Please make sure you update your WHMCS to version 4.5.2 to use current SSL module without errors. _</font>
+* Notes:*<br/>
+_ 1)Due to a bug in the “custom page” functionality of WHMCS version 5.2.1 our current module is not yet compatible with this version. We advise that all current users remain on WHMCS Version 5.1.4 until a patch is issued by WHMCS to resolve this issue._
 
-
+_ 2) Due to bugs in WHMCS version 4.5.1, some activation issues may take place. Please make sure you update your WHMCS to version 4.5.2 to use current SSL module without errors. _
 ----
 ===Updated on Oct 25, 2012 to Version 1.2.6  ===
 
