@@ -1,5 +1,16 @@
 #summary Changes made in each release of Namecheap.com WHMCS Registrar Plugin.
 
+====Version 1.2.6 for WHMCS 5====
+_(Release Date: May 10, 2012)_
+
+  * Added IDN support
+  * Added debug mode
+  * Removed validation for empty phone/fax fields
+  * Fixed bug for editing MX and MXE records
+  * Fixed bug for setting default nameservers after domain registration
+  * Changed 4 default NS count to 5 
+  * Fixed dependency on php directive arg_separator.output 
+
 ====Version 1.2.5 for WHMCS 5====
 _(Release Date: Dec 14, 2012)_
 
