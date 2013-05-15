@@ -1,7 +1,7 @@
 #summary Changes made in each release of Namecheap.com WHMCS Registrar Plugin.
 
 ====Version 1.2.6 for WHMCS 5====
-_(Release Date: May 10, 2012)_
+_(Release Date: May 10, 2013)_
 
   * Added IDN support
   * Added debug mode
