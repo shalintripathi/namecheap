@@ -3,8 +3,7 @@
 = Namecheap.com WHMCS SSL Module (v 1.3.0) =
 
 ----
-* Notes:*<br/>
-_ This version is fully compatible with 5.2.x versions of WHMCS. The only known bug is related to resending fulfillment emails for active Comodo certificates from client area – this is to be fixed soon._
+* Note:*_ This version is fully compatible with 5.2.x versions of WHMCS. The only known bug is related to resending fulfillment emails for active Comodo certificates from client area – this is to be fixed soon._
 ----
 ===Updated on Jun 20, 2013 to Version 1.3.0  ===
 
