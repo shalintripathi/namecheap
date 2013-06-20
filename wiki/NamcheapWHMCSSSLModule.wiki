@@ -1,18 +1,17 @@
 #summary Namecheap.com WHMCS SSL Module (SSL Plugin)
 
-= Namecheap.com WHMCS SSL Module (v 1.2.6) =
+= Namecheap.com WHMCS SSL Module (v 1.3.0) =
 
 ----
 * Notes:*<br/>
-_ 1)Due to a bug in the “custom page” functionality of WHMCS version 5.2.1 our current module is not yet compatible with this version. We advise that all current users remain on WHMCS Version 5.1.4 until a patch is issued by WHMCS to resolve this issue._
-
-_ 2) Due to bugs in WHMCS version 4.5.1, some activation issues may take place. Please make sure you update your WHMCS to version 4.5.2 to use current SSL module without errors. _
+_ This version is fully compatible with 5.2.x versions of WHMCS. The only known bug is related to resending fulfillment emails for active Comodo certificates from client area – this is to be fixed soon._
 ----
-===Updated on Oct 25, 2012 to Version 1.2.6  ===
+===Updated on Jun 20, 2013 to Version 1.3.0  ===
 
-  * Products/Services Configuration bug fixed.
-  * Callback details for DV SSLs bug fixed.
-
+  *  $1.99 PositiveSSL certificates can now be used for activation from WHMCS with ‘Use existing SSL from account’ feature. 
+  *  Fixed possible issues with viewing information and synchronizing due dates from admin area.
+  *  Fixed possible source of ‘memory’ issue occurring while first access to Namecheap addon.
+  *  Changed installation directories – now addon is located in ‘addons’ folder, not in ‘admin’ .
 
  [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
@@ -52,7 +51,8 @@ to automate SSL Certificate sales with the Namecheap platform. This allows you t
   * !VeriSign Secure Site Pro EV
 
 ----
-<font size=3px>* Note:*</font> <font size=2.5px>_ Thawte SSL Certificates are not supported by the API as of today, even though they are available for selection in the module. Attempting to purchase and activate Thawte Certificates will result in an error. _</font>
+<font size=3px>* Note:*</font> <font size=2.5px>_ <br/>1) Thawte SSL Certificates are not supported by the API as of today, even though they are available for selection in the module. Attempting to purchase and activate Thawte Certificates will result in an error.<br/> 2) ComodoSSL is a test product, it is included in list of products, but it is not fully workable yet. Please do not set up ComodoSSL Products.
+_</font>
 
 
 ----
@@ -87,18 +87,22 @@ Activation process in Sandbox works only for the following SSL Certificates:
   * !VeriSign Secure Site EV
   * !VeriSign Secure Site Pro EV
 
+
+----
+<font size=3px>* Note:*</font> <font size=2.5px>_Attempt to activate Comodo certificates from Sandbox will cause errors as Comodo do not provide test environment to us unlike Symantec._</font>
+
+
+----
+
 == Download and Installation ==
 
-1. Extract attached archive. In the archive you will find 3 folders:
-  *  namecheapssl-module-v1.2.2
-  *  namecheapssl-addon-v1.2.2
-  *  namecheapssl-hook-v1.2.2
+1. Download and extract attached archive. In the archive you will find  the following 2 folders: 
+  *  Includes
+  *  Modules
 
-2. Install Module. Create a folder called 'namecheapssl ' under /modules/servers/ in your WHMCS root directory and paste the content of the folder namecheapssl-module-v1.2.2 into /modules/servers/namecheapssl/. The SSL Module installation is now complete.
+2. Copy those folders to your root folder of WHMCS. Files will be copied to corresponding directories.
 
-3. Install Hook. Paste the content of the folder namecheapssl-hook-v1.2.2 inside /includes/hooks/ in your WHMCS root directory. The SSL !ModuleHook installation is complete now.
-
-4. Install Addon. Create a folder called 'namecheapssl ' under /modules/admin/ in your WHMCS root directory and paste the content of the folder namecheapssl-addon-v1.2.2 inside the folder. Now please go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl (given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete. Note: if you don't have folder /modules/admin/ - feel free to create it manually.
+3. Please go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then please click ‘Addons > NamecheapSSL Module addon’ or go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl (given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete.
 
 == Setting up the Product and Configuration ==
 
@@ -140,11 +144,7 @@ https://products.verisign.com/orders/orderinformation/authentication.do
 
 
 ==== Multiple Years ====
-In this version of the module, certificate validity periods are configured via billing cycles. See item #3 from the previous section
-for more information.
-
-*Note:* If there are any _Configurable Options_ left from any previous versions of the Namecheap SSL Module, please delete
-them as they may cause errors.
+Certificate validity periods are configured via billing cycles. See item #3 from the previous section for more information. 
 
 ==== The Order Process ====
 
@@ -207,7 +207,13 @@ area. This feature is shown for active certificates only:
 
 Clicking this button makes all _Comodo_ certificates status change to ‘Awaiting configuration’; as for other brands, you will be redirected to a corresponding certificate authority reissue page. 
 To complete the process, please follow the instructions from the confirmation email sent by a certificate authority.
-Reissuing a certificate will change its Namecheap Certificate ID.
+Reissuing a certificate will change its Namecheap Certificate ID. A new certificate record will be added to your Namecheap account.
+
+----
+<font size=3px>* Note:*</font> <font size=2.5px>_ If you try pressing ‘Reissue Certificate’ button for Symantec certificates, you will have an error returned. Please just encourage your customer to reissue the certificate by the link in error message_</font>
+----
+
+http://files.namecheap.com/images/googlecode/whmcs-ssl-module-command-error.png
 
 ==== Synchronize due date and reissue state ====
 All changes done in WHMCS are synchronized with your Namecheap account automatically once a day (when WHMCS cron runs). Also you can perform manual synchronization any time by clicking ‘Synchronize due date and reissue state’. This will set WHMCS due dates and reissue states in sync with Namecheap admin area when needed:
@@ -225,5 +231,16 @@ Here you can check certificate status, status descriptions, certificate type, vi
 
 Each successful operation is confirmed by ‘Module Command Success’ message.
 
+----
+<font size=3px>* Note:*</font> <font size=2.5px>_In case you face any errors with synchronizing old certificates or viewing their info – please submit a ticket with our support team. There is a solution for it ,but it is not yet fully stable so it is not documented here. _</font>
+----
+
+Translation
+Our module supports default WHMCS languages:
+
+http://files.namecheap.com/images/googlecode/whmcs-ssl-module-translation.png
+
+In case you need to have some specific fields translated, you may edit values of corresponding variables in English.php lang file located at modules\servers\namecheapssl\lang. If you cannot find some fields there – they may be taken from lang files located in \lang folder of your WHMCS.
+
 == Support ==
-Please use the [http://code.google.com/p/namecheap/issues/list Issues page] to report bugs and provide feedback. Alternatively, you can also [http://support.namecheap.com/ submit a ticket] for assistance.
+Please use our support ticket system at http://support.namecheap.com to report bugs, provide feedback or to get help with configurations.
