@@ -1,5 +1,12 @@
 #summary Release notes for WHMCS SSL Plugin
 
+=== Version 1.3.0 ===
+_Released on Jun 20, 2013_
+
+  * $1.99 PositiveSSL certificates can now be used for activation from WHMCS with ‘Use existing SSL from account’ feature.
+  * Fixed possible issues with viewing information and synchronizing due dates from admin area.
+  * Fixed possible source of ‘memory’ issue occurring while first access to Namecheap addon.
+  * Changed installation directories – now addon is located in ‘addons’ folder, not in ‘admin’ .
 === Version 1.2.6 ===
 _Released on Oct 25, 2012_
 
