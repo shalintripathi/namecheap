@@ -1,11 +1,11 @@
 #summary Namecheap.com WHMCS SSL Module (SSL Plugin)
 
-= Namecheap.com WHMCS SSL Module (v 1.3.0) =
+= Namecheap.com WHMCS SSL Module (v 1.3.1) =
 
 ----
 * Note:*_ This version is fully compatible with 5.2.x versions of WHMCS. The only known bug is related to resending fulfillment emails for active Comodo certificates from client area – this is to be fixed soon._
 ----
-===Updated on Jun 20, 2013 to Version 1.3.0  ===
+===Updated on Jul 04, 2013 to Version 1.3.1  ===
   #  Changed installation process.
   #  Changed certificate creation process. Now the NC side certificate is created on the third step of configuration. 
    2.1 The created Certificate’s used for backward compatibility with the presence of certificate NC REMOTE ID in database. 
