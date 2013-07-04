@@ -13,9 +13,7 @@
   * For PositiveSSL certificates type of "PositiveSSL Free" is checked .
  * Added Thawte certificates support.
  * Added necessary additional fields Comodo EV SSL, Comodo EV SGC SSL certificates on the first configuration step.
- * Added necessary additional fields for the following Certificates: GEOTRUST: True BusinessID With EV, True BusinessID, True BusinessID Wildcard;
-VERISIGN: Secure Site, Secure Site Pro, Secure Site with EV, Secure Site Pro with EV;
-THAWTE: SSL123, SSL Web Server, SGC Super Certs, SSL WebServer EV
+ * Added necessary additional fields for the following Certificates: GEOTRUST: True BusinessID With EV, True BusinessID, True BusinessID Wildcard; VERISIGN: Secure Site, Secure Site Pro, Secure Site with EV, Secure Site Pro with EV; THAWTE: SSL123, SSL Web Server, SGC Super Certs, SSL WebServer EV
 
 *Bug Fixes:*
 
