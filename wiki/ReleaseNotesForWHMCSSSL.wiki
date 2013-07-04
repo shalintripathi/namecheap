@@ -12,7 +12,7 @@ _Released on Jul 04, 2013_
  * Added necessary additional fields Comodo EV SSL, Comodo EV SGC SSL certificates on the first configuration step.
  * Added necessary additional fields for the following Certificates: GEOTRUST: True BusinessID With EV, True BusinessID, True BusinessID Wildcard;
 VERISIGN: Secure Site, Secure Site Pro, Secure Site with EV, Secure Site Pro with EV;
-THAWTE: SSL123, SSL Web Server, SGC Super Certs, !SSL WebServer EV
+THAWTE: SSL123, SSL Web Server, SGC Super Certs, SSL !WebServer EV
 
 *Bug Fixes:*
 
