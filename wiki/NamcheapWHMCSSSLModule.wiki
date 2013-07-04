@@ -6,11 +6,23 @@
 * Note:*_ This version is fully compatible with 5.2.x versions of WHMCS. The only known bug is related to resending fulfillment emails for active Comodo certificates from client area – this is to be fixed soon._
 ----
 ===Updated on Jun 20, 2013 to Version 1.3.0  ===
+  #  Changed installation process.
+  #  Changed certificate creation process. Now the NC side certificate is created on the third step of configuration. 
+   2.1 The created Certificate’s used for backward compatibility with the presence of certificate NC REMOTE ID in database. 
+  # If the product settings of the ordered Certificate have "Use existing SSL from account" option enabled, then on the third step of configuration all the certificates with the "new purchase" status will be verified. If there is an Active certificate of the same type a REMOTE ID will be used and a new certificate will not be created.
+   3.1 For PositiveSSL certificates type of "PositiveSSL Free" is checked .
+  # Added Thawte certificates support.
+  # Added necessary additional fields Comodo EV SSL, Comodo EV SGC SSL certificates on the first configuration step.
+  # Added necessary additional fields for the following Certificates: GEOTRUST: True BusinessID With EV, True BusinessID, True BusinessID Wildcard;
+VERISIGN: Secure Site, Secure Site Pro, Secure Site with EV, Secure Site Pro with EV;
+THAWTE: SSL123, SSL Web Server, SGC Super Certs, SSL WebServer EV
 
-  *  $1.99 PositiveSSL certificates can now be used for activation from WHMCS with ‘Use existing SSL from account’ feature. 
-  *  Fixed possible issues with viewing information and synchronizing due dates from admin area.
-  *  Fixed possible source of ‘memory’ issue occurring while first access to Namecheap addon.
-  *  Changed installation directories – now addon is located in ‘addons’ folder, not in ‘admin’ .
+*Bug Fixes:*
+
+ # Fixed a case where the php.ini directive arg_separator.input not equal to "&".
+ # Removed extra check for null value phone / fax number on the side of the module.
+ # Fixed the hook to synchronize the date and state of expiration and reissue
+ # Fixed possible php parse error in addon. Could take place previously when php.ini directive short_open_tag was disabled.
 
  [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
@@ -95,13 +107,21 @@ Activation process in Sandbox works only for the following SSL Certificates:
 
 == Download and Installation ==
 
-1. Download and extract attached archive. In the archive you will find  the following 2 folders: 
-  *  Includes
-  *  Modules
+1. Download and extract attached archive. Copy the contents to the root folder of whmcs (folder structure will remain the same).
 
-2. Copy those folders to your root folder of WHMCS. Files will be copied to corresponding directories.
+2. Go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then please click ‘Addons > NamecheapSSL Module addon’ or go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl (given you have WHMCS installed onhttp://yourdomain.com/). The SSL Module Addon installation is now complete.
 
-3. Please go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then please click ‘Addons > NamecheapSSL Module addon’ or go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl (given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete.
+*For those upgrading to 1.3.x from previous versions:*
+
+1. The installation script /modules/servers/namecheapssl/install.php is now deprecated and should be removed if you still have it.
+
+2. The module /modules/admin/namecheapssl/ is deprecated and should be removed. Its functionality was moved to the addon.
+
+*For those upgrading between 1.3.x versions:*
+
+1. Download and unzip attached archive. Copy the contents to the root folder of whmcs (folder structure will remain the same).
+
+2. Go to ‘Addons > NamecheapSSL Module addon’ in admin area or go to http://yourdomain.com/admin/addonmodules.php?module=namecheapssl (given you have WHMCS installed onhttp://yourdomain.com/). The SSL Module Addon will take care of the update automatically.
 
 == Setting up the Product and Configuration ==
 
