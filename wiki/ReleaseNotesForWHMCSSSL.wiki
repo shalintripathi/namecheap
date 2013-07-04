@@ -1,5 +1,27 @@
 #summary Release notes for WHMCS SSL Plugin
 
+=== Version 1.3.1 ===
+_Released on Jul 04, 2013_
+
+ #  Changed installation process.
+  #  Changed certificate creation process. Now the NC side certificate is created on the third step of configuration. 
+   2.1 The created Certificate’s used for backward compatibility with the presence of certificate NC REMOTE ID in database. 
+  # If the product settings of the ordered Certificate have "Use existing SSL from account" option enabled, then on the third step of configuration all the certificates with the "new purchase" status will be verified. If there is an Active certificate of the same type a REMOTE ID will be used and a new certificate will not be created.
+   3.1 For PositiveSSL certificates type of "PositiveSSL Free" is checked .
+  # Added Thawte certificates support.
+  # Added necessary additional fields Comodo EV SSL, Comodo EV SGC SSL certificates on the first configuration step.
+  # Added necessary additional fields for the following Certificates: GEOTRUST: True BusinessID With EV, True BusinessID, True BusinessID Wildcard;
+VERISIGN: Secure Site, Secure Site Pro, Secure Site with EV, Secure Site Pro with EV;
+THAWTE: SSL123, SSL Web Server, SGC Super Certs, SSL WebServer EV
+
+*Bug Fixes:*
+
+ # Fixed a case where the php.ini directive arg_separator.input not equal to "&".
+ # Removed extra check for null value phone / fax number on the side of the module.
+ # Fixed the hook to synchronize the date and state of expiration and reissue
+ # Fixed possible php parse error in addon. Could take place previously when php.ini directive short_open_tag was disabled.
+
+
 === Version 1.3.0 ===
 _Released on Jun 20, 2013_
 
