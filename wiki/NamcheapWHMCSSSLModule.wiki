@@ -57,7 +57,7 @@ to automate SSL Certificate sales with the Namecheap platform. This allows you t
   * !VeriSign Secure Site Pro EV
 
 ----
-<font size=3px>* Note:*</font> <font size=2.5px>_ <br/>1) Thawte SSL Certificates are not supported by the API as of today, even though they are available for selection in the module. Attempting to purchase and activate Thawte Certificates will result in an error.<br/> 2) ComodoSSL is a test product, it is included in list of products, but it is not fully workable yet. Please do not set up ComodoSSL Products.
+<font size=3px>* Note:*</font> <font size=2.5px>_ <br/> ComodoSSL is a test product, it is included in list of products, but it is not fully workable yet. Please do not set up ComodoSSL Products.
 _</font>
 
 
