@@ -109,6 +109,14 @@ Activation process in Sandbox works only for the following SSL Certificates:
   * !VeriSign Secure Site Pro EV
 
 
+* Thawte Certificates:*
+  
+  * SSL 123
+  * Web Server
+  * Web Server EV
+  * Supercert
+
+
 ----
 <font size=3px>* Note:*</font> <font size=2.5px>_ Attempt to activate Comodo OV or EV certificates from Sandbox will lead only to receiving DCV email. Test cert will NOT be sent by Comodo._</font>
 
