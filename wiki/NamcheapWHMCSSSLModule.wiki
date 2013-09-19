@@ -56,12 +56,12 @@ to automate SSL Certificate sales with the Namecheap platform. This allows you t
   * !VeriSign Secure Site EV
   * !VeriSign Secure Site Pro EV
 
-*!Thawte Certificates:*
+* Thawte Certificates:*
   
-  * !SSL 123
-  * !Web Server
-  * !Web Server EV
-  * !Supercert
+  * SSL 123
+  * Web Server
+  * Web Server EV
+  * Supercert
 
 
 ----
