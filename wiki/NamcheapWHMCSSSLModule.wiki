@@ -95,11 +95,11 @@ Activation process in Sandbox works only for the following SSL Certificates:
   * !GeoTrust TrueBusinessID
   * !GeoTrust TrueBusinessID !WildCard
 
-*!Comodo Certificates:*
-  * !Comodo PositiveSSL
-  * !Comodo PositiveSSL Wildcard
-  * !Comodo EssentialSSL
-  * !Comodo EssentialSSL Wildcard
+* Comodo Certificates:*
+  * Comodo PositiveSSL
+  * Comodo PositiveSSL Wildcard
+  * Comodo EssentialSSL
+  * Comodo EssentialSSL Wildcard
 
 
 *!VeriSign Certificates:*
