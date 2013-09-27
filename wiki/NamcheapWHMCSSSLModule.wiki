@@ -31,11 +31,11 @@ You will be allowed to resell all of our SSL products:
 
   * RapidSSL
   * RapidSSL Wildcard
-  * GeoTrust QuickSSL
-  * GeoTrust QuickSSL Premium
-  * GeoTrust True BusinessID with EV
-  * GeoTrust TrueBusinessID
-  * GeoTrust TrueBusinessID WildCard
+  * !GeoTrust QuickSSL
+  * !GeoTrust QuickSSL Premium
+  * !GeoTrust True BusinessID with EV
+  * !GeoTrust TrueBusinessID
+  * !GeoTrust TrueBusinessID !WildCard
 
 *Comodo Certificates:*
 
@@ -50,12 +50,12 @@ You will be allowed to resell all of our SSL products:
   * Comodo EV SSL (new)
   * Comodo EV SGC SSL (new)
 
-*VeriSign Certificates:*
+*!VeriSign Certificates:*
 
-  * VeriSign Secure Site
-  * VeriSign Secure Site Pro
-  * VeriSign Secure Site EV
-  * VeriSign Secure Site Pro EV
+  * !VeriSign Secure Site
+  * !VeriSign Secure Site Pro
+  * !VeriSign Secure Site EV
+  * !VeriSign Secure Site Pro EV
 
 *Thawte Certificates:*
 
@@ -67,31 +67,31 @@ You will be allowed to resell all of our SSL products:
 ----
 *Important Note:*
 
-//You may find ComodoSSL in list of SSLs while setting up products in WHMCS. ComodoSSL is a test product, it is included in list of products, but it is not fully workable yet. Please do not set up ComodoSSL Products.//
+_You may find ComodoSSL in list of SSLs while setting up products in WHMCS. ComodoSSL is a test product, it is included in list of products, but it is not fully workable yet. Please do not set up ComodoSSL Products._
 
 ----
 
 
 === Sandbox and Production Environment===
 
-Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our sandbox environment, before pointing it to production. It uses same calls as our production environment except that you will not receive actual SSL product in the end of the process. Difference between setting product for Sandbox and for production will be described in Setting products section.
+Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. It uses same calls as our production environment except that you will not receive actual SSL product in the end of the process. Difference between setting product for Sandbox and for production will be described in Setting products section.
 
 Comodo CA does not provide test environment for their products so only Symantec certificate can be activated from sandbox: 
 
-*GeoTrust Cerificates:*
+*!GeoTrust Cerificates:*
   * RapidSSL
   * RapidSSL Wildcard
-  * GeoTrust QuickSSL
-  * GeoTrust QuickSSL Premium
-  * GeoTrust True BusinessID with EV
-  * GeoTrust TrueBusinessID
-  * GeoTrust TrueBusinessID WildCard
+  * !GeoTrust QuickSSL
+  * !GeoTrust QuickSSL Premium
+  * !GeoTrust True BusinessID with EV
+  * !GeoTrust TrueBusinessID
+  * !GeoTrust TrueBusinessID WildCard
 
-*VeriSign Certificates:*
-  * VeriSign Secure Site
-  * VeriSign Secure Site Pro
-  * VeriSign Secure Site EV
-  * VeriSign Secure Site Pro EV
+*!VeriSign Certificates:*
+  * !VeriSign Secure Site
+  * !VeriSign Secure Site Pro
+  * !VeriSign Secure Site EV
+  * !VeriSign Secure Site Pro EV
 
 *Thawte Certificates:*
   * SSL 123
