@@ -1,5 +1,16 @@
 #summary Release notes for WHMCS SSL Plugin
 
+=== Version 1.4.0  ===
+_Released on Sep 27, 2013_
+
+  * Improved log functionality
+  * Added possibility to link/relink Namecheap certificates (existing) with WHMCS orders.
+  * Added built-in lookup for list of certs for all of users having products set up within WHMCS module.
+  * Added compatibility with Comodo Sandbox Environment
+  * Added daily email report for all actions with Namecheap SSL Module.
+  * Reduced amount of hard-coded lang variables for better translatability
+  * Minor fixes
+
 === Version 1.3.2 ===
 _Released on Jul 04, 2013_
 
