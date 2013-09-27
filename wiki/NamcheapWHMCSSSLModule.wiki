@@ -14,7 +14,7 @@
   * Reduced amount of hard-coded lang variables for better translatability
   * Minor fixes
 
-[Release Notes]
+[http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
 
 ===Getting Started: Prerequisites and products provided===
 
