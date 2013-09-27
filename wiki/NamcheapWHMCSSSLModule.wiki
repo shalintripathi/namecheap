@@ -14,7 +14,7 @@
   * Reduced amount of hard-coded lang variables for better translatability
   * Minor fixes
 
-[http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL View Release Notes]
+[http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL Release Notes]
 
 ===Getting Started: Prerequisites and products provided===
 
@@ -257,20 +257,26 @@ All changes done in WHMCS are synchronized with your Namecheap account automatic
 ===FAQ===
 
 *Q:* I cancel certificate and nothing happens
+
 *A:* Cancellation is being performed only in your WHMCS, but not in our system. Please submit a cancellation request with our SSL support team for certificate to be revoked and refunded
 
 
 *Q:* Does your module support multi-language?
+
 *A:* Yes, multi-language is fully integrated with WHMCS so you may change the default language of your WHMCS and language will be changed in fields used in module as well.
 
 *Q:* Getting # An error occured: [3022295] Invalid Approveremail: ErrorDetails -4: The value of the 'loginPassword' argument is invalid! #  or other similar errors while activation of PositiveSSL (or any other Comodo one) in Sandbox
+
 *A:* Our Sandbox environment does not support Comodo certificates as Comodo do not provide Sandbox environment to us. 
 
 *Q:* Getting “[2010167] Parameter Years is Missing” error while accepting order.
+
 *A:* This error usually occurs when Pricing is set up inproperly for your SSL product. Please doublecheck that Payment type is set to ‘Recurring’ and there is ‘-1’ input in ‘Monhtly, Quarterly, and Semi-Anually’ fields to disable possibility of ordering SSL for terms less than a year as SSL certificates can only be ordered and issed for a whole number of years only. 
 
 *Q:* I receive 'An error occured: Invalid phone number or phone country code' error while activation of SSL certificate via your WHMCS module!
+
 *A:* Please doublecheck that you have the valid information input in Phone (please pay attention to Phone number format) and Zip-code fields in both Admin contact info and in Technical Contact info (in product settings) . 
 
 *Q:* I am receiving ''['" or any other strange characters instead or error messages while activation of my renewal certificate
+
 *A:* This is a known bug, our developers are currently investigating it. In case you face this issue please email details at sslsupport@namecheap.com and kindly purchase and activate renewal certificate manually from Namecheap if renewal is urgent. After purchasing certificate manually you will need to sync the IDs using ‘Link/Re-Link WHMCS Cert ID to NC Cert ID’ addon function.
