@@ -151,9 +151,9 @@ http://files.namecheap.com/images/googlecode/Customizing-TechnicalContacts.png
  
 Note: Our ability to provide support to customers who use custom Technical Contact Fields is limited. In case custom technical contact details are used, we cannot perform reissues, resending of approver email/ certificate, or cancellation/revocation of GeoTrust and VeriSign SSL Certificates. However, since you possess control over technical contact, you can access GeoTrust/VeriSign Live Account and perform these required actions yourself.
 
-For control of GeoTrust SSLs, please visit: https://products.geotrust.com/orders/orderinformation/authentication.do
+For control of !GeoTrust SSLs, please visit: https://products.geotrust.com/orders/orderinformation/authentication.do
 
-For control of VeriSign SSLs, please visit: https://products.verisign.com/orders/orderinformation/authentication.do
+For control of !VeriSign SSLs, please visit: https://products.verisign.com/orders/orderinformation/authentication.do
 
 *The Order Process*
 
@@ -171,6 +171,7 @@ Type of product setup behavior in Module Settings tab:
 
 [http://files.namecheap.com/images/googlecode/Module-Settings.png]
  
+
 1. Configuration email is always sent for options “Automatically setup the product as soon as an order is placed” and “Automatically setup the product as soon as the first payment is received”. If you select “Automatically setup the product as soon as an order is placed”, a configuration email will only be sent if the order is placed from the client area. The module itself will run only if you place the order from client area as well.
 
 2. If the options “Automatically setup the product when you manually accept a pending order” or “Do not automatically setup this product” are selected, then sending of the Configuration Email will depend on the box “Send Welcome Email”:
