@@ -128,20 +128,20 @@ To setup an SSL certificate product, please follow the steps below:
 
 2. Ensure the welcome email is set to "None" in the dropdown menu on the Details tab, as the module sends its own email.
 
-3. In this version, the module billing cycles and SSL validity period are configured via standard WHMCS “Products/Services” settings. To access this, go to the Pricing tab and select Payment Type to Recurring. Now disable “One Time/Monthly”, “Quarterly” and “Semi-Annualy” billing cycles since they are not applicable to SSL Certificates. Finally, specify prices for remaining billing cycles. “Annually” corresponds to 1 year of SSL certificate validity (i.e. the SSL will be registered for 1 year). Biennially and triennially refer to 2 and 3 years respectively.
+3. In this version, the module billing cycles and SSL validity period are configured via standard WHMCS “Products/Services” settings. To access this, go to the Pricing tab and select Payment Type to Recurring. Now disable _“One Time/Monthly”_, _“Quarterly”_ and _“Semi-Annualy”_ billing cycles since they are not applicable to SSL Certificates. Finally, specify prices for remaining billing cycles. _“Annually”_ corresponds to 1 year of SSL certificate validity (i.e. the SSL will be registered for 1 year). Biennially and triennially refer to 2 and 3 years respectively.
 
 [http://files.namecheap.com/images/googlecode/Product-Settings.png]
 
  
-4. On the Module Settings tab, choose "Namecheapssl" from Module Name dropdown menu.
+4. On the _Module Settings_ tab, choose _"Namecheapssl"_ from Module Name dropdown menu.
 
-5. Enter your API credentials. If you wish to test this module in sandbox environment, make sure to enter your sandbox username, sandbox API key in the corresponding text fields. Also, be sure to check the “Test Mode” box.
+5. Enter your API credentials. If you wish to test this module in sandbox environment, make sure to enter your sandbox username, sandbox API key in the corresponding text fields. Also, be sure to check the _“Test Mode”_ box.
 
 6. Choose the certificate type from the drop-down menu.
 
-7. If you have a special “Promotion Code”, type it into the corresponding text field.
+7. If you have a special _“Promotion Code”_, type it into the corresponding text field.
 
-8. If “Use existing SSL from account” option is checked we will try to use an existing SSL certificate of this type from your Namecheap account first. If there is no SSL available that can be used, a new certificate will be purchased.
+8. If _“Use existing SSL from account”_ option is checked we will try to use an existing SSL certificate of this type from your Namecheap account first. If there is no SSL available that can be used, a new certificate will be purchased.
 
 9. The purpose of the next set of fields is to customize the Technical Contact Details for any purchased SSL Certificates (fields are shown on a screens shot below). By default, Namecheap Contact details are used (email address sslsupport@namecheap.com). Using a custom Technical Contact Details is useful for resellers who wish to appear as an independent business entity to their customers. Depending on whether you want to use custom Technical Contact Details or not, perform the corresponding action:
   * In order to use *Default Technical Email* leave ALL of the fields below empty.
@@ -251,7 +251,7 @@ All changes done in WHMCS are synchronized with your Namecheap account automatic
 
 [http://files.namecheap.com/images/googlecode/Sync-duedate-reissuestatus.png]
 
-*Renewal* is pretty much the same as purchasing new certificate with Namecheap. Renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to “Recurring” when creating a product, invoices for renewals will be generated automatically. Once paid, renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL.
+*Renewal* is pretty much the same as purchasing new certificate with Namecheap. Renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to “Recurring” when creating a product, invoices for renewals will be generated automatically. Once paid, renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL is created, it still requires activation using [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 renewal CSR].
 
 
 ===FAQ===
