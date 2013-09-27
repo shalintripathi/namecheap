@@ -270,11 +270,11 @@ All changes done in WHMCS are synchronized with your Namecheap account automatic
 
 *A:* Yes, multi-language is fully integrated with WHMCS so you may change the default language of your WHMCS and language will be changed in fields used in module as well.
 
-*Q:* Getting # An error occured: [ 3022295 ] Invalid Approveremail: !ErrorDetails -4: The value of the 'loginPassword' argument is invalid! #  or other similar errors while activation of PositiveSSL (or any other Comodo one) in Sandbox
+*Q:* Getting # An error occured: _[3022295]_ Invalid Approveremail: !ErrorDetails -4: The value of the 'loginPassword' argument is invalid! #  or other similar errors while activation of PositiveSSL (or any other Comodo one) in Sandbox
 
 *A:* Our Sandbox environment does not support Comodo certificates as Comodo do not provide Sandbox environment to us. 
 
-*Q:* Getting “[ 2010167 ] Parameter Years is Missing” error while accepting order.
+*Q:* Getting “ _[2010167]_ Parameter Years is Missing” error while accepting order.
 
 *A:* This error usually occurs when Pricing is set up inproperly for your SSL product. Please doublecheck that Payment type is set to ‘Recurring’ and there is ‘-1’ input in ‘Monhtly, Quarterly, and Semi-Anually’ fields to disable possibility of ordering SSL for terms less than a year as SSL certificates can only be ordered and issed for a whole number of years only. 
 
