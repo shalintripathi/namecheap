@@ -5,7 +5,7 @@
 ----
 * Note:*_ This version is fully compatible with 5.2.x versions of WHMCS._
 ----
-===Updated on Sep 26, 2013 to Version 1.4.0  ===
+===Updated on Sep 27, 2013 to Version 1.4.0  ===
   * Improved log functionality
   * Added possibility to link/relink Namecheap certificates (existing) with WHMCS orders.
   * Added built-in lookup for list of certs for all of users having products set up within WHMCS module.
@@ -13,6 +13,8 @@
   * Added daily email report for all actions with Namecheap SSL Module.
   * Reduced amount of hard-coded lang variables for better translatability
   * Minor fixes
+
+[Release Notes]
 
 ===Getting Started: Prerequisites and products provided===
 
