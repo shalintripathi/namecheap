@@ -85,7 +85,7 @@ Comodo CA does not provide test environment for their products so only Symantec 
   * !GeoTrust QuickSSL Premium
   * !GeoTrust True BusinessID with EV
   * !GeoTrust TrueBusinessID
-  * !GeoTrust TrueBusinessID WildCard
+  * !GeoTrust TrueBusinessID !WildCard
 
 *!VeriSign Certificates:*
   * !VeriSign Secure Site
@@ -178,6 +178,7 @@ Type of product setup behavior in Module Settings tab:
 
 [http://files.namecheap.com/images/googlecode/Welcome-Email-Setting.png]
  
+
 You can modify content of the configuration email at any time.
 
 === Activation from WHMCS ===
@@ -186,6 +187,7 @@ In order to activate certificate of yours you need to access list of your servic
 
 [http://files.namecheap.com/images/googlecode/View-Certificate-Details.png]
  
+
 After that you need to click ‘View certificate details’ and ‘Configure certificate’.
 
 You will see window with SSL activation fields: 
@@ -205,6 +207,7 @@ Further activation process is between you or your customer and Certificate Autho
 While setting product you may check ‘Debug mode’ box in order to have your actions with module logged (highly recommended): 
  
 [http://files.namecheap.com/images/googlecode/Enabling-Debug-Mode.png]
+
 This will allow you to check log of actions performed by module in addons section in WHMCS:
 
 [http://files.namecheap.com/images/googlecode/Enabling-Log.png]
