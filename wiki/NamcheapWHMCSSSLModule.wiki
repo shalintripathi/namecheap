@@ -22,12 +22,12 @@ Namecheap.com SSL module for WHMCS is an open-source plugin that is distributed 
 
 ====Pre-requisites====
   * Access to WHMCS admin area.
-  * An understanding of Namecheap’s environments.
+  * An understanding of [http://www.namecheap.com/support/api/api.aspx Namecheap’s environments].
   * Namecheap account with API access enabled on the desired environment.
 
 You will be allowed to resell all of our SSL products: 
 
-*GeoTrust Cerificates:*
+*!GeoTrust Cerificates:*
 
   * RapidSSL
   * RapidSSL Wildcard
