@@ -111,7 +111,11 @@ Installation of module will not take a lot of time:
 
 1. Download and extract attached archive. It can be downloaded here: [https://code.google.com/p/namecheap/downloads/detail?name=namecheap_ssl_140.zip&can=2&q=].  Copy the contents to the root folder of whmcs (folder structure will remain the same).  
 
-2. Go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then please click ‘Addons > NamecheapSSL Module addon’ or go to http://yourdomain.com/admin/addonmodules.php?module=namecheap_ssl (given you have WHMCS installed on http://yourdomain.com/). The SSL Module Addon installation is now complete.
+2. Go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then go here:
+
+[http://files.namecheap.com/images/googlecode/ssl-module-addon-installation.png]
+
+The SSL Module Addon installation is now complete.
 ----
 Important Note: 
 
