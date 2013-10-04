@@ -119,7 +119,7 @@ The SSL Module Addon installation is now complete.
 ----
 Important Note: 
 
-If you receive any errors or cannot access http://yourdomain.com/admin/addonmodules.php?module=namecheap_ssl please set up access rights to addon for everyone as on screenshot:
+If you receive any errors or cannot access addon please set up access rights to addon for everyone as on screenshot: 
 
 [http://files.namecheap.com/images/googlecode/Access%20Rights.png]
  
