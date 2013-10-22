@@ -1,5 +1,16 @@
 #summary Changes made in each release of Namecheap.com WHMCS Registrar Plugin.
 
+====Version 1.2.7 for WHMCS 5====
+_(Release Date: Oct 22, 2013)_
+
+ *  Added .fr, .sg, .com.sg, .fr, .net.au, .org.au, .com.au, .es, .com.es, .nom.es, .org.es support
+ *  Removed error "Domain name not found" for domains in any status, except for not in "Active" or "Expired"
+ *  Added "Job Title" additional field for .ca and .au domains
+ *  All errors from API response are returned by the module (in case there is more than one error)
+ *  Fixed error with domains that have been added in punycode to WHMCS
+ *  Added conversion for registrant state/province and zip code fields for .ca domains according to the registry requirements
+
+
 ====Version 1.2.6 for WHMCS 5====
 _(Release Date: May 10, 2013)_
 
