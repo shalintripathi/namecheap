@@ -1,22 +1,23 @@
 #summary Namecheap.com WHMCS SSL Module (SSL Plugin)
 
-= Namecheap.com WHMCS SSL Module (v 1.4.0) =
+= Namecheap.com WHMCS SSL Module (v 1.4.1) =
 
 ----
 * Note:*_ This version is fully compatible with 5.2.x versions of WHMCS._
 ----
-===Updated on Sep 27, 2013 to Version 1.4.0  ===
-  * Improved log functionality
-  * Added possibility to link/relink Namecheap certificates (existing) with WHMCS orders.
-  * Added built-in lookup for list of certs for all of users having products set up within WHMCS module.
-  * Added compatibility with Comodo Sandbox Environment
-  * Added daily email report for all actions with Namecheap SSL Module.
-  * Reduced amount of hard-coded lang variables for better translatability
-  * Minor fixes
+===Updated on October 30, 2013 to Version 1.4.1===
+  * Added possibility to reissue Symantec certificates from WHMCS interface.
+  * Added possibility to use HTTP-based validation instead of approval email.
+  * Added possibility to download certificate from WHMCS user area.
+  * Added additional checks for API responses.
+  * Added Whois emails to list of addresses for Domain Control Validation.
+  * Fixed uninformative error message ‘Invalid Phone or Country code’.
+  * Fixed dependence of module language upon language choice in WHMCS
+  * Minor fixes.
 
 [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL Release Notes]
 
-===Getting Started: Prerequisites and products provided===
+===Before you begin===
 
 Namecheap.com SSL module for WHMCS is an open-source plugin that is distributed free of charge. This module allows you to automate SSL Certificate sales with the Namecheap platform.
 
@@ -24,6 +25,8 @@ Namecheap.com SSL module for WHMCS is an open-source plugin that is distributed 
   * Access to WHMCS admin area.
   * An understanding of [http://www.namecheap.com/support/api/api.aspx Namecheap’s environments].
   * Namecheap account with API access enabled on the desired environment.
+
+====List of supported SSL certificates:====
 
 You will be allowed to resell all of our SSL products: 
 
@@ -42,10 +45,10 @@ You will be allowed to resell all of our SSL products:
   * Comodo PositiveSSL
   * Comodo PositiveSSL Wildcard
   * Comodo InstantSSL
-  * Comodo InstantSSL Pro (new)
+  * Comodo InstantSSL Pro 
   * Comodo PremiumSSL
-  * Comodo PremiumSSL Wildcard (new)
-  * Comodo EssentialSSL (new)
+  * Comodo PremiumSSL Wildcard 
+  * Comodo EssentialSSL 
   * Comodo EssentialSSL Wildcard (new)
   * Comodo EV SSL (new)
   * Comodo EV SGC SSL (new)
@@ -67,16 +70,19 @@ You will be allowed to resell all of our SSL products:
 ----
 *Important Note:*
 
-_You may find ComodoSSL in list of SSLs while setting up products in WHMCS. ComodoSSL is a test product, it is included in list of products, but it is not fully workable yet. Please do not set up ComodoSSL Products._
+_You may find ComodoSSL in the list of SSLs while setting up products in WHMCS. ComodoSSL is a test product, it is included in the list of products, but it is not fully supported yet. Please do not set up ComodoSSL Products._
 
 ----
 
 
-=== Sandbox and Production Environment===
+=== Sandbox and Production Environments===
 
-Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the plug-in in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. It uses same calls as our production environment except that you will not receive actual SSL product in the end of the process. Difference between setting product for Sandbox and for production will be described in Setting products section.
+Namecheap has a production as well as a test server environment. The test server environment is called Sandbox. We urge you to test the module in our [http://www.sandbox.namecheap.com/ sandbox environment], before pointing it to production. It uses same calls as our production environment except that you will not receive actual SSL product in the end of the process and will not be charged real money. Difference between setting product for Sandbox and for production will be described in "Setting up products and pricings" section.
 
-Comodo CA does not provide test environment for their products so only Symantec certificate can be activated from sandbox: 
+====List of certificates supported in Sandbox:====
+ 
+All of our certificates are supported in sandbox:
+
 
 *!GeoTrust Cerificates:*
   * RapidSSL
@@ -101,15 +107,24 @@ Comodo CA does not provide test environment for their products so only Symantec 
 *Comodo Certificates:*
   * Comodo PositiveSSL
   * Comodo PositiveSSL Wildcard
-  * Comodo EssentialSSL (new)
-  * Comodo EssentialSSL Wildcard (new)
+  * Comodo InstantSSL
+  * Comodo InstantSSL Pro 
+  * Comodo PremiumSSL
+  * Comodo PremiumSSL Wildcard
+  * Comodo EssentialSSL
+
+---
+*Important Note:*
 
 Please note that activation of Comodo OV and EV certificates will not lead to receiving test certificate itself, only DCV email will be sent.
 
-===Download and installation===
-Installation of module will not take a lot of time:
+---
 
-1. Download and extract attached archive. It can be downloaded here: [https://code.google.com/p/namecheap/downloads/detail?name=namecheap_ssl_140.zip&can=2&q=].  Copy the contents to the root folder of whmcs (folder structure will remain the same).  
+===Download and installation===
+
+Installation of our SSLmodule is very simple and takes just a few minutes:
+
+1. Download and extract attached archive. It can be downloaded here: [https://code.google.com/p/namecheap/downloads/list].  Copy the contents to the root folder of WHMCS (folder structure will remain the same).  
 
 2. Go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then go here:
 
@@ -119,12 +134,12 @@ The SSL Module Addon installation is now complete.
 ----
 Important Note: 
 
-If you receive any errors or cannot access addon please set up access rights to addon for everyone as on screenshot: 
+If you receive any errors or cannot access addon please set up access permissions to addon for everyone as on screenshot: 
 
 [http://files.namecheap.com/images/googlecode/Access%20Rights.png]
  
 ----
-===Setting products, pricings===
+===Setting up products and pricings===
 
 To setup an SSL certificate product, please follow the steps below:
 
@@ -159,7 +174,7 @@ For control of !GeoTrust SSLs, please visit: https://products.geotrust.com/order
 
 For control of !VeriSign SSLs, please visit: https://products.verisign.com/orders/orderinformation/authentication.do
 
-*The Order Process*
+*Order Process*
 
 The product will appear in the order process as a regular product which can be added to the cart. No configuration is performed before purchase. Once a certificate is purchased, paid for, and activated, the user is sent an email containing a link which takes them to configure the certificate in the client area. Once all details have been provided, the configuration data is sent to the Certificate Authority for validation. No manual intervention is required from you.
 
@@ -187,28 +202,45 @@ You can modify content of the configuration email at any time.
 
 === Activation from WHMCS ===
 
-In order to activate certificate of yours you need to access list of your services and click on ‘View Details’ button next to ordered certificate.
+In order to activate a certificate purchased from you, your client needs to access list of your services and click on ‘View Details’ button next to ordered certificate.
 
 [http://files.namecheap.com/images/googlecode/View-Certificate-Details.png]
  
 
-After that you need to click ‘View certificate details’ and ‘Configure certificate’.
+After that your client needs to click ‘View certificate details’ and ‘Configure certificate’.
 
-You will see window with SSL activation fields: 
+He will see window with SSL activation fields: 
 
 [http://files.namecheap.com/images/googlecode/Configuring-SSL-Certificate.png] 
 
-At this stage you need to input CSR code (obtained from web-server), select web-server type and fill in valid admin contact info.
+At this stage your client needs to input CSR code (obtained from web-server), select web-server type and fill in valid admin contact info.
 
-Basically admin contact info is to be taken from customer info in WHMCS.
+Basically admin contact info is to be prefilled from user's WHMCS profile.
 
-In case CSR code is ok, you will receive the list of approval emails to select. One of those emails is to be selected in order to receive validation email there: it is needed for certificate issuance. 
+Then your customer clicks "Proceed" and gets to next step.
+
+In case CSR code is ok, your client will see the list of available DCV options on the next page.Those DCV options are basically HTTP-based validation or approval email. Your client may select any of emails there to receive Domain Control Validation email on that address or select HTTP-based DCV. In case HTTP-based DCV radiobutton is selected no email is to be sent for validation, however your customer will need to submit a specific file to root folder of his domain. 
+Name and contents of file will be shown after he clicks ‘Submit’ and activation data gets transmitted to Certificate Authority. Also the file contents can be checked in customer’s area by viewing information of certificate that is being activated.
 
 Further activation process is between you or your customer and Certificate Authority. You are to receive approval email (for most certificates except Symantec OV and EV certs) and to approve it. After that certificate is to be sent to you (within 10-15 mins) or some docs request is to be sent to you for OV or EV certs.
 
+----
+*Important Note:*
+
+Language variables containing strings with instructions to HTTP-based validation and with file contents are stored in /modules/servers/namecheapssl/lang/English.php. If you are using other language you need to create 
+/modules/servers/namecheapssl/lang/%yourlanguage%.php and change values of the following variables to corresponding phrases in your language: $_MOD_LANG['ncssl_http_based_validation'] ,$_MOD_LANG['ncssl_show_validation_file_contents'] , $_MOD_LANG['ncssl_custom_phrase_sslcertapproveremaildetails'],$_MOD_LANG['ncssl_custom_phrase_sslconfigcompletedetails']
+----
+
 === Debugging and Addon functions===
 
-While setting product you may check ‘Debug mode’ box in order to have your actions with module logged (highly recommended): 
+Our Namecheap SSL Module addon has the following functions:
+  * Log
+  * Link/Re-Ling WHMCS cert ID to NC Cert ID
+  * Certificate list
+
+Log
+
+While setting product you may check ‘Debug mode’ box in order to have your actions with module logged: 
  
 [http://files.namecheap.com/images/googlecode/Enabling-Debug-Mode.png]
 
@@ -222,7 +254,7 @@ Each action will have WHMCS service ID of certificate that was viewed/activated/
 
 *Link/Re-Link WHMCS Cert ID to NC Cert ID*
 
-This feature allows fetching WHMCS certificate record with Namecheap certificate.
+This feature allows connecting WHMCS certificate record to existing Namecheap certificate.
 
 For this you will need to input WHMCS invoice ID given after order placement to corresponding box and then to input certID of an existing certificate within your NC account (can be found next to certificate in list of SSLs at Namecheap).
 
@@ -231,7 +263,7 @@ After clicking ‘Sync’ details for specific certificate in your WHMCS will be
 
 *Certificate List*
 
-Here you may check certificates in all of the NC user accounts that have Namecheapssl products set up for them in your WHMCS.
+In this section you may see all of the certificates ordered via this WHMCS from all of the NC accounts associated with it.
 
 You will see the following fields in the lists:
 
@@ -242,19 +274,21 @@ You will see the following fields in the lists:
 
 Reissue and renewal are 2 different actions with SSL certificate.
 
-Reissue is the process of having Comodo certificate regenerated with Certificate Authority if needed. For example, if you have lost your Private Key. For that you need to view details of your certificate from list of certificates in WHMCS user area and click ‘Reissue Certificate’ button:
+After the certificate gets issued, its status becomes ‘active’ and you will see the following screen while viewing it’s info:
 
 [http://files.namecheap.com/images/googlecode/Reissuing-Cerificate.png]
+
+There you may download certificate in zip archive in corresponding format for your web-server or reissue the certificate.
+
+*Reissue*
+
+Reissue is the process of having certificate regenerated with Certificate Authority if needed. For example, if your client has lost your Private Key. For that he needs to view details of your certificate from list of certificates in WHMCS user area and click ‘Reissue Certificate’ button:
+
  
 
-Further process will be very similar to activation – you will need to paste CSR for same domain name and select approval email. Reissuing a certificate will change its Namecheap Certificate ID. A new certificate record will be added to your Namecheap account.
+Further process will be very similar to activation – you will need to paste CSR for the same domain name and select approval email. Reissuing a certificate will change its Namecheap Certificate ID. A new certificate record will be added to your Namecheap account.
 
-----
-*Important Note:*
-If you try pressing ‘Reissue Certificate’ button for Symantec certificates, you will have an error returned. Please just encourage your customer to reissue the certificate by the link in error message
-----
-
-*Synchronize due date and reissue state*
+*Due date and reissue state synchronization*
 
 All changes done in WHMCS are synchronized with your Namecheap account automatically once a day (when WHMCS cron runs). Also you can perform manual synchronization any time by clicking ‘Synchronize due date and reissue state’. This will set WHMCS due dates and reissue states in sync with Namecheap admin area when needed:
 
@@ -270,22 +304,14 @@ All changes done in WHMCS are synchronized with your Namecheap account automatic
 *A:* Cancellation is being performed only in your WHMCS, but not in our system. Please submit a cancellation request with our SSL support team for certificate to be revoked and refunded
 
 
-*Q:* Does your module support multi-language?
+*Q:* Does your module have multi-language support?
 
-*A:* Yes, multi-language is fully integrated with WHMCS so you may change the default language of your WHMCS and language will be changed in fields used in module as well.
-
-*Q:* Getting # An error occured: _[3022295]_ Invalid Approveremail: !ErrorDetails -4: The value of the 'loginPassword' argument is invalid! #  or other similar errors while activation of PositiveSSL (or any other Comodo one) in Sandbox
-
-*A:* Our Sandbox environment does not support Comodo certificates as Comodo do not provide Sandbox environment to us. 
+*A:* Yes, multi-language is fully integrated with WHMCS so you may change the default language of your WHMCS and language will be changed for fields used in module as well. Please note that you will need to create a custom %yourlanguage%.php file in lang directory at modules/servers/namecheapssl/lang for some fields to be translated as well. You may use default English.php as translation template.
 
 *Q:* Getting “ _[2010167]_ Parameter Years is Missing” error while accepting order.
 
-*A:* This error usually occurs when Pricing is set up inproperly for your SSL product. Please doublecheck that Payment type is set to ‘Recurring’ and there is ‘-1’ input in ‘Monhtly, Quarterly, and Semi-Anually’ fields to disable possibility of ordering SSL for terms less than a year as SSL certificates can only be ordered and issed for a whole number of years only. 
-
-*Q:* I receive 'An error occured: Invalid phone number or phone country code' error while activation of SSL certificate via your WHMCS module!
-
-*A:* Please doublecheck that you have the valid information input in Phone (please pay attention to Phone number format) and Zip-code fields in both Admin contact info and in Technical Contact info (in product settings) . 
+*A:* This error usually occurs when Pricing is set up improperly for your SSL product. Please doublecheck that Payment type is set to ‘Recurring’ and there is ‘-1’ input in ‘Monhtly, Quarterly, and Semi-Anually’ fields to disable possibility of ordering SSL for terms less than a year as SSL certificates can only be ordered and issued for a whole number of years only. 
 
 *Q:* I am receiving ''['" or any other strange characters instead or error messages while activation of my renewal certificate
 
-*A:* This is a known bug, our developers are currently investigating it. In case you face this issue please email details at sslsupport@namecheap.com and kindly purchase and activate renewal certificate manually from Namecheap if renewal is urgent. After purchasing certificate manually you will need to sync the IDs using ‘Link/Re-Link WHMCS Cert ID to NC Cert ID’ addon function.
+*A:* This is a known bug, our developers are currently investigating it. In case you face this issue please email details to sslsupport@namecheap.com and kindly purchase and activate renewal certificate manually from Namecheap if renewal is urgent. After purchasing certificate manually you will need to sync the IDs using  ‘Link/Re-Link WHMCS Cert ID to NC Cert ID’  addon function.
