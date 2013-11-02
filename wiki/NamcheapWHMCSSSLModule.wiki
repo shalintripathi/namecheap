@@ -5,7 +5,7 @@
 ----
 * Note:*_ This version is fully compatible with 5.2.x versions of WHMCS._
 ----
-===Updated on October 30, 2013 to Version 1.4.1===
+===Updated on November 1, 2013 to Version 1.4.1===
   * Added possibility to reissue Symantec certificates from WHMCS interface.
   * Added possibility to use HTTP-based validation instead of approval email.
   * Added possibility to download certificate from WHMCS user area.
