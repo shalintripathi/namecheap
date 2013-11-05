@@ -49,9 +49,9 @@ You will be allowed to resell all of our SSL products:
   * Comodo PremiumSSL
   * Comodo PremiumSSL Wildcard 
   * Comodo EssentialSSL 
-  * Comodo EssentialSSL Wildcard (new)
-  * Comodo EV SSL (new)
-  * Comodo EV SGC SSL (new)
+  * Comodo EssentialSSL Wildcard
+  * Comodo EV SSL
+  * Comodo EV SGC SSL 
 
 *!VeriSign Certificates:*
 
@@ -112,6 +112,7 @@ All of our certificates are supported in sandbox:
   * Comodo PremiumSSL
   * Comodo PremiumSSL Wildcard
   * Comodo EssentialSSL
+  * Comodo EssentialSSL Wildcard
 
 ---
 *Important Note:*
