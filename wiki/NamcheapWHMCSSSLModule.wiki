@@ -15,6 +15,10 @@
   * Fixed dependence of module language upon language choice in WHMCS
   * Minor fixes.
 
+===Updated on November 15, 2013 to Version 1.4.2===
+  * Fixed bug related to ‘Invalid Link Followed’ error  (Addon updated to version 1.3)
+
+
 [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL Release Notes]
 
 ===Before you begin===
@@ -125,7 +129,7 @@ Please note that activation of Comodo OV and EV certificates will not lead to re
 
 Installation of our SSLmodule is very simple and takes just a few minutes:
 
-1. Download and extract attached archive. It can be downloaded here: [https://code.google.com/p/namecheap/downloads/list].  Copy the contents to the root folder of WHMCS (folder structure will remain the same).  
+1. Download and extract attached archive. It can be downloaded here: [https://code.google.com/p/namecheap/downloads/list].  Copy the contents to the root folder of whmcs (folder structure will remain the same).  
 
 2. Go to 'Setup >Addon Modules' in your WHMCS Admin area and activate the addon. Then go here:
 
@@ -216,9 +220,9 @@ He will see window with SSL activation fields:
 
 At this stage your client needs to input CSR code (obtained from web-server), select web-server type and fill in valid admin contact info.
 
-Basically admin contact info is to be prefilled from user's WHMCS profile.
+Basically admin contact info is to be pre-filled from user's WHMCS profile.
 
-Then your customer clicks "Proceed" and gets to next step.
+Then your customer clicks 'Proceed' and gets to next step.
 
 In case CSR code is ok, your client will see the list of available DCV options on the next page.Those DCV options are basically HTTP-based validation or approval email. Your client may select any of emails there to receive Domain Control Validation email on that address or select HTTP-based DCV. In case HTTP-based DCV radiobutton is selected no email is to be sent for validation, however your customer will need to submit a specific file to root folder of his domain. 
 Name and contents of file will be shown after he clicks ‘Submit’ and activation data gets transmitted to Certificate Authority. Also the file contents can be checked in customer’s area by viewing information of certificate that is being activated.
@@ -236,15 +240,13 @@ Language variables containing strings with instructions to HTTP-based validation
 
 Our Namecheap SSL Module addon has the following functions:
   * Log
-  * Link/Re-Ling WHMCS cert ID to NC Cert ID
+  * Link/Re-Link WHMCS cert ID to NC Cert ID
   * Certificate list
 
 Log
 
 While setting product you may check ‘Debug mode’ box in order to have your actions with module logged: 
  
-[http://files.namecheap.com/images/googlecode/Enabling-Debug-Mode.png]
-
 This will allow you to check log of actions performed by module in addons section in WHMCS:
 
 [http://files.namecheap.com/images/googlecode/Enabling-Log.png]
@@ -275,7 +277,7 @@ You will see the following fields in the lists:
 
 Reissue and renewal are 2 different actions with SSL certificate.
 
-After the certificate gets issued, its status becomes ‘active’ and you will see the following screen while viewing it’s info:
+After the certificate gets issued, it's status becomes ‘active’ and you will see the following screen while viewing it’s info:
 
 [http://files.namecheap.com/images/googlecode/Reissuing-Cerificate.png]
 
@@ -285,17 +287,15 @@ There you may download certificate in zip archive in corresponding format for yo
 
 Reissue is the process of having certificate regenerated with Certificate Authority if needed. For example, if your client has lost your Private Key. For that he needs to view details of your certificate from list of certificates in WHMCS user area and click ‘Reissue Certificate’ button:
 
- 
-
-Further process will be very similar to activation – you will need to paste CSR for the same domain name and select approval email. Reissuing a certificate will change its Namecheap Certificate ID. A new certificate record will be added to your Namecheap account.
+Further process will be very similar to activation – your customer will need to paste CSR for the same domain name and select approval email. Reissuing a certificate will change its Namecheap Certificate ID. A new certificate record will be added to your Namecheap account.
 
 *Due date and reissue state synchronization*
 
-All changes done in WHMCS are synchronized with your Namecheap account automatically once a day (when WHMCS cron runs). Also you can perform manual synchronization any time by clicking ‘Synchronize due date and reissue state’. This will set WHMCS due dates and reissue states in sync with Namecheap admin area when needed:
+All changes done in WHMCS are synchronized with your Namecheap account automatically once a day (when WHMCS cron runs). Also you can perform manual synchronization any time by clicking ‘Synchronize with Namecheap’. This will set WHMCS due dates and reissue states in sync with Namecheap admin area when needed:
 
 [http://files.namecheap.com/images/googlecode/Sync-duedate-reissuestatus.png]
 
-*Renewal* is pretty much the same as purchasing new certificate with Namecheap. Renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to “Recurring” when creating a product, invoices for renewals will be generated automatically. Once paid, renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL is created, it still requires activation using [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 renewal CSR].
+*Renewal* is pretty much the same as purchasing new certificate with Namecheap. Renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to “Recurring” when creating a product, invoices for renewals will be generated automatically. Once paid, renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL is created, it still requires activation using [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 CSR].
 
 
 ===FAQ===
