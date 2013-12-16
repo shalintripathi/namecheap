@@ -302,7 +302,9 @@ All changes done in WHMCS are synchronized with your Namecheap account automatic
 *Renewal* is pretty much the same as purchasing new certificate with Namecheap. Renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to “Recurring” when creating a product, invoices for renewals will be generated automatically. Once paid, renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL is created, it still requires activation using [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 CSR].
 
 ===Multi-Domain Certificates===
+
 *General information about product*
+
 Recently Multi-Domain Certificates were added to Namecheap’s product list. These certificates are quite popular among customers, but require some additional configurations. during
 Multidomain certificates can be divided into 2 categories – old single domain products that now support additional domains as a configurable addon, and new multi-domain products that come with a predefined number of domains included in the product by default (more domains can be included additionally as well). Therefore number of domains included by default differs across the products. See the table for details: 
 
@@ -443,14 +445,9 @@ http://files.namecheap.com/images/googlecode/multi-domain-approver-email.png
 
 For example, if he selects “admin@” as approver email having “domain.com” as common name in CSR and “secure.domain.com” and “domain2.com” as addon domains, the approvals will be sent to admin@domain.com, admin@secure.domain.com and admin@domain2.com . 
 
-
-
 If your customer wishes to change email for one of the domains, he should contact you, and you in turn need to contact us via live chat or ticket system to have emails changed.
 
-
-
 Such approver email selection flow on second configuration page is caused by certain limitations in WHMCS core.
-
 
 
 ===FAQ===
