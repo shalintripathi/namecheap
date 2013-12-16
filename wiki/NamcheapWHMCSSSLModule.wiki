@@ -122,12 +122,12 @@ All of our certificates are supported in sandbox:
   * Comodo PositiveSSL Multi Domain
  
 
----
+----
 *Important Note:*
 
 Please note that activation of Comodo OV and EV certificates will not lead to receiving test certificate itself, only DCV email will be sent.
 
----
+----
 
 ===Download and installation===
 
@@ -342,11 +342,11 @@ http://files.namecheap.com/images/googlecode/adding-configurable-options.png
 That’s it. Now if your customer orders a multi-domain certificate he will be able to add some additional domains to his order.
 
 
----
+----
 *Important Note:* 
 
 Please mention the default number of domains provided with Multi-Domain Certificates in product name or product description – this will guarantee your customers that even if they do not order any additional domains, they will have some of them added by default.
----
+----
 
 === QuickSSL Premium multi-domain setup ===
 
@@ -392,11 +392,11 @@ http://files.namecheap.com/images/googlecode/managing-add-ons-after-purchase.png
 
 There your customer can increase number of addon domains. An attempt to decrease that number will cause error. A new hook was implemented in client area tracking attempts to decrease number of addon domains.
 
----
+----
 *Important Note:* 
 
 The number of addon domains can be changed from client area only after invoice for order is paid.
----
+----
 
 
 In order to change number of addon domains in WHMCS admin area, you need to access product page and manually input the new number of addon domains.
@@ -405,11 +405,11 @@ Please note that in case you decrease or increase this number here, you need to 
 
 http://files.namecheap.com/images/googlecode/editing-add-ons.png
 
----
+----
 *Important Note:* 
 
 In case you or your client increases number of addon domains for a certificate your Namecheap account will be charged for every extra addon domain used during activation/reissue.
----
+----
 
 For example, if your customer has ordered 2 more domains before reissue or you have manually increased number of addon domains by 2, your Namecheap account will be charged for 2 addon domains after reissue is complete from WHMCS client area.
 
