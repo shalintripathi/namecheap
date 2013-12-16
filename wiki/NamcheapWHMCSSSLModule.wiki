@@ -94,6 +94,9 @@ All of our certificates are supported in sandbox:
   * !GeoTrust True BusinessID with EV
   * !GeoTrust TrueBusinessID
   * !GeoTrust TrueBusinessID !WildCard
+  * !GeoTrust TrueBusinessID Multi Domain
+  * !GeoTrust TrueBusinessID with EV Multi Domain
+
 
 *!VeriSign Certificates:*
   * !VeriSign Secure Site
@@ -115,6 +118,9 @@ All of our certificates are supported in sandbox:
   * Comodo PremiumSSL Wildcard
   * Comodo EssentialSSL
   * Comodo EssentialSSL Wildcard
+  * Comodo Unified Communications
+  * Comodo PositiveSSL Multi Domain
+ 
 
 ---
 *Important Note:*
