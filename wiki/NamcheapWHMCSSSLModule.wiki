@@ -306,6 +306,20 @@ All changes done in WHMCS are synchronized with your Namecheap account automatic
 Recently Multi-Domain Certificates were added to Namecheap’s product list. These certificates are quite popular among customers, but require some additional configurations. during
 Multidomain certificates can be divided into 2 categories – old single domain products that now support additional domains as a configurable addon, and new multi-domain products that come with a predefined number of domains included in the product by default (more domains can be included additionally as well). Therefore number of domains included by default differs across the products. See the table for details: 
 
+||<b>Provider</b>||<b>Product name</b>||<b>Default number of domains<br/> (domain from CSR is counted here)</b>||<b>Maximum number of domains</b>||<b>Maximum number of domains<br/> that should be used in configurable options</b>||
+||Comodo||PositiveSSL Multi-domain||3||100||97||
+||Comodo||Unified Communications||3||100||97||
+||Geotrust||QuickSSL Premium||1||4||-||
+||Geotrust||True Business ID with EV Multi-domain||5||25||20||
+||Geotrust||True Business ID Multi-domain||5||25||20||
+||Thawte||SSL Web Server||1||25||24||
+||Thawte||SSL Web Server with EV||1||25||24||
+||Thawte||SGC Supercerts||1||25||24||
+||Verisign||Secure Site Pro with EV||1||25||24||
+||Verisign||Secure Site with EV||1||25||24||
+||Verisign||Secure Site||1||25||24||
+||Verisign||Secure Site Pro||1||25||24||
+
 *Setting up Multi-Domain Certificates*
 
 First of all, you need to set up product as described in ‘Setting up products and pricings’ section.  After product is set up the default number of addon domains (from table above) will be available during activation.
