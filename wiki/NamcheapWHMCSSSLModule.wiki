@@ -10,6 +10,7 @@
   * Fixed bug causing incorrect display of list of certificates in addon for cases when production username is same as sandbox one.
   * Fixed showing all possible Management options in user area instead of showing only available ones.
   * Fixed of issue with no fields appearing in ‘Module Settings’ after selecting ‘namecheapssl’ from dropdown menu.
+  * Fixed issue with "Unhandled Exception" error being received while reissue
   * Minor internal fixes.
 
 [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL Release Notes]
