@@ -1,23 +1,16 @@
 #summary Namecheap.com WHMCS SSL Module (SSL Plugin)
 
-= Namecheap.com WHMCS SSL Module (v 1.4.1) =
+= Namecheap.com WHMCS SSL Module (v 1.5) =
 
 ----
 * Note:*_ This version is fully compatible with 5.2.x versions of WHMCS._
 ----
-===Updated on November 1, 2013 to Version 1.4.1===
-  * Added possibility to reissue Symantec certificates from WHMCS interface.
-  * Added possibility to use HTTP-based validation instead of approval email.
-  * Added possibility to download certificate from WHMCS user area.
-  * Added additional checks for API responses.
-  * Added Whois emails to list of addresses for Domain Control Validation.
-  * Fixed uninformative error message ‘Invalid Phone or Country code’.
-  * Fixed dependence of module language upon language choice in WHMCS
-  * Minor fixes.
-
-===Updated on November 15, 2013 to Version 1.4.2===
-  * Fixed bug related to ‘Invalid Link Followed’ error  (Addon updated to version 1.3)
-
+===Updated on Dec 16, 2013 to Version 1.5===
+  * Multi-Domain Certificates support added
+  * Fixed bug causing incorrect display of list of certificates in addon for cases when production username is same as sandbox one.
+  * Fixed showing all possible Management options in user area instead of showing only available ones.
+  * Fixed of issue with no fields appearing in ‘Module Settings’ after selecting ‘namecheapssl’ from dropdown menu.
+  * Minor internal fixes.
 
 [http://code.google.com/p/namecheap/wiki/ReleaseNotesForWHMCSSSL Release Notes]
 
@@ -43,6 +36,8 @@ You will be allowed to resell all of our SSL products:
   * !GeoTrust True BusinessID with EV
   * !GeoTrust TrueBusinessID
   * !GeoTrust TrueBusinessID !WildCard
+  * !GeoTrust TrueBusinessID Multi Domain
+  * !GeoTrust TrueBusinessID with EV Multi Domain
 
 *Comodo Certificates:*
 
@@ -55,7 +50,10 @@ You will be allowed to resell all of our SSL products:
   * Comodo EssentialSSL 
   * Comodo EssentialSSL Wildcard
   * Comodo EV SSL
-  * Comodo EV SGC SSL 
+  * Comodo EV SGC SSL
+  * Comodo Unified Communications
+  * Comodo PositiveSSL Multi Domain
+ 
 
 *!VeriSign Certificates:*
 
@@ -74,7 +72,7 @@ You will be allowed to resell all of our SSL products:
 ----
 *Important Note:*
 
-_You may find ComodoSSL in the list of SSLs while setting up products in WHMCS. ComodoSSL is a test product, it is included in the list of products, but it is not fully supported yet. Please do not set up ComodoSSL Products._
+_You may find ComodoSSL in the list of SSLs during setting up products in WHMCS. ComodoSSL is a test product, it is included in the list of products, but it is not fully supported yet. Please do not set up ComodoSSL Products._
 
 ----
 
@@ -245,11 +243,11 @@ Our Namecheap SSL Module addon has the following functions:
 
 Log
 
-While setting product you may check ‘Debug mode’ box in order to have your actions with module logged: 
- 
-This will allow you to check log of actions performed by module in addons section in WHMCS:
+During setting up product you may check ‘Debug mode’ box in order to have your actions with module logged : 
 
 [http://files.namecheap.com/images/googlecode/Enabling-Log.png]
+
+This will allow you to check log of actions performed by module in addons section in WHMCS:
 
 There you will find all of the actions performed by your customer with namecheapssl products, all hook actions and all API calls and responses. This is very convenient for investigation of possible issues.
 
@@ -296,6 +294,143 @@ All changes done in WHMCS are synchronized with your Namecheap account automatic
 [http://files.namecheap.com/images/googlecode/Sync-duedate-reissuestatus.png]
 
 *Renewal* is pretty much the same as purchasing new certificate with Namecheap. Renewal functionality is fully integrated into the module. As long as you have “Payment Type” set to “Recurring” when creating a product, invoices for renewals will be generated automatically. Once paid, renewal SSLs will be created automatically as well. Please keep in mind that after the renewal SSL is created, it still requires activation using [http://namecheap.simplekb.com/kb.show?show=article&articleid=817&categoryid=71 CSR].
+
+===Multi-Domain Certificates===
+*General information about product*
+Recently Multi-Domain Certificates were added to Namecheap’s product list. These certificates are quite popular among customers, but require some additional configurations. during
+Multidomain certificates can be divided into 2 categories – old single domain products that now support additional domains as a configurable addon, and new multi-domain products that come with a predefined number of domains included in the product by default (more domains can be included additionally as well). Therefore number of domains included by default differs across the products. See the table for details: 
+
+*Setting up Multi-Domain Certificates*
+
+First of all, you need to set up product as described in ‘Setting up products and pricings’ section.  After product is set up the default number of addon domains (from table above) will be available during activation.
+In order to give your customers ability to order additional domains you need to set up configurable options for each multi-domain certificate you set up. It would not take much time.
+
+1. Go to configurable options and click on ‘Create a new group’ there.
+
+
+http://files.namecheap.com/images/googlecode/setting-up-multi-domain.png
+
+2. Fill in the name of your group (We recommend mentioning product name there) and select a product you wish to associate the configurable option with.
+
+http://files.namecheap.com/images/googlecode/configurable-option-groups.png
+
+3. Click ‘Add new configurable option’ button.
+
+http://files.namecheap.com/images/googlecode/adding-configurable-options.png
+
+4. Option Name. This field consists of two parts, the first one is internal and the other one is Visible to clients. Option name must contain ‘san|’ element. The text input after “|” will be displayed in your clients’ shopping cart.   We recommend  to specify default number of addon domains that are already included in certificate (For example – “san|Addon domains ( 3 domains are included by default)” for PositiveSSL MultiDomain.
+
+5. Select ‘Quantity’ as Option Type from dropdown menu. Click ‘Save changes’.
+
+6. Type 0 in ‘Minimum Quantity Required’ and the value from the last column of the table above as ‘Maximum Allowed’. For example, if you are setting up PositiveSSL Multi Domain, please input 97 as maximum.
+
+7. Use any name (it will not be shown anywhere) in the box next to ‘Add Option:’ and click ‘Save changes’.
+
+8. At this point you will see the table for pricing similar to one you’ve filled in during setting up product. Please fill in pricing for each additional domain for different terms.
+
+9. Click ‘Save changes’
+
+http://files.namecheap.com/images/googlecode/adding-configurable-options.png
+
+
+That’s it. Now if your customer orders a multi-domain certificate he will be able to add some additional domains to his order.
+
+
+---
+*Important Note:* 
+
+Please mention the default number of domains provided with Multi-Domain Certificates in product name or product description – this will guarantee your customers that even if they do not order any additional domains, they will have some of them added by default.
+---
+
+=== QuickSSL Premium multi-domain setup ===
+
+As you could see from the table above, QuickSSLs Premium are also multi-domain product from now on. However they have certain specifics. 
+
+  * You have 2 options during purchasing QuickSSL Premium – default single-domain option or option with 4 additional subdomains.
+
+  * You may only add subdomains of different levels as addons – different domains will return error.
+
+  * Price remains the same in case you activate QuickSSL Premium with 1 or 4 additional subdomains.
+
+Configurable option for QuickSSL Premium is a bit different. Please follow the next steps in order to configure it.
+
+http://files.namecheap.com/images/googlecode/quickssl-configurable-options.png
+
+1. Please select Option type as ‘Dropdown’.
+
+2. Please set name as ‘san|Addon Subdomains’ (or, as for other Multi-Domain Certificates, any other phrase after ‘|’.
+ 
+3. Fill the field below ‘Options’ with “0|No addon subdomains” (or any other phrase after ‘|’ on your demand. “0” is the keyword meaning that selecting this option will create no fields for client during activation.
+
+4. Click ‘Save Changes’.
+
+5. Fill the new field with ‘1|4 addon subdomains’ (or any other phrase after ‘|’ on your demand). “1” is the keyword meaning that selecting this option will create 4 fields for addon subdomains for client during activation.
+
+6. Click ‘Save changes’.
+
+
+Example of configurable options table:  
+
+http://files.namecheap.com/images/googlecode/quickssl-configurable-options-example.png
+
+===Managing addon domains after purchase is made===
+
+Your client as well as you will be able to add more domains to a certificate after order is complete.
+
+This can be done either from user and admin areas. 
+
+In order to do that in admin area, your customer needs to mouse over ‘Management Actions’ and select ‘Upgrade/Downgrade Options’. 
+
+
+http://files.namecheap.com/images/googlecode/managing-add-ons-after-purchase.png
+
+There your customer can increase number of addon domains. An attempt to decrease that number will cause error. A new hook was implemented in client area tracking attempts to decrease number of addon domains.
+
+---
+*Important Note:* 
+
+The number of addon domains can be changed from client area only after invoice for order is paid.
+---
+
+
+In order to change number of addon domains in WHMCS admin area, you need to access product page and manually input the new number of addon domains.
+
+Please note that in case you decrease or increase this number here, you need to invoice/refund your client manually.
+
+http://files.namecheap.com/images/googlecode/editing-add-ons.png
+
+---
+*Important Note:* 
+
+In case you or your client increases number of addon domains for a certificate your Namecheap account will be charged for every extra addon domain used during activation/reissue.
+---
+
+For example, if your customer has ordered 2 more domains before reissue or you have manually increased number of addon domains by 2, your Namecheap account will be charged for 2 addon domains after reissue is complete from WHMCS client area.
+
+===Activation of Multi-Domain Certificates===
+
+Activation process is similar to activation of single-domain certificates. Below the CSR box you will see fields for additional domains (or subdomains in case of QuickSSL Premium). 
+
+It is not strongly required to fill in all the Addon Domain field during the first activation. Duplicate records are not allowed (including duplicates in CSR’s common name and addon domain fields). 
+
+Below is an example of first configuration page for PositiveSSL Multi Domain with 5 addon domains ordered (1 domain from CSR + 2 addon domains by default + 5 addon domains ordered separately).
+
+http://files.namecheap.com/images/googlecode/multi-domain-activation.png
+
+The list of approver emails is different from the one you see on the second configuration page for single-domain certificates. It contains only local parts of email addresses that can be used for domain control validation. Once your customer selects one of the local parts, it will be added to every domain/subdomain input in Addon domains fields. 
+
+http://files.namecheap.com/images/googlecode/multi-domain-approver-email.png
+
+For example, if he selects “admin@” as approver email having “domain.com” as common name in CSR and “secure.domain.com” and “domain2.com” as addon domains, the approvals will be sent to admin@domain.com, admin@secure.domain.com and admin@domain2.com . 
+
+
+
+If your customer wishes to change email for one of the domains, he should contact you, and you in turn need to contact us via live chat or ticket system to have emails changed.
+
+
+
+Such approver email selection flow on second configuration page is caused by certain limitations in WHMCS core.
+
 
 
 ===FAQ===
